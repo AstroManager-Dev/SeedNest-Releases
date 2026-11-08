@@ -1,0 +1,21 @@
+name: Verbesserung vorschlagen
+description: Eine Idee für SeedNest einbringen.
+title: "[Idee] "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Was möchtest du erledigen?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Wie könnte SeedNest dabei helfen?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Beispiel oder zusätzliche Hinweise (freiwillig)
+      description: Keine privaten Dateien oder Zugangsdaten veröffentlichen.
