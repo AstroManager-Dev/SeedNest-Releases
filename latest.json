@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "applicationId": "de.seednest.app",
-  "versionCode": 41,
-  "versionName": "Alpha.0.5.002",
-  "tag": "Alpha.0.5.002",
-  "notes": "Changelog aufgeräumt und bis zum ersten Build 0.1.0 offline verfügbar. Enthält die GitHub-Updatefunktion mit einmaligem Starthinweis, optionaler täglicher Prüfung und geprüftem APK-Download. Unter Mehr → Updates & Changelog manuell prüfen. Vor dem Update Backup erstellen; bestehende App nicht deinstallieren.",
-  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.002/SeedNest-Native-Alpha.0.5.002.apk",
-  "sha256": "7cab33d369f0c9bd1d8d3c19938a71d11704774155df8df61c7be68c801811a1",
+  "versionCode": 42,
+  "versionName": "Alpha.0.5.003",
+  "tag": "Alpha.0.5.003",
+  "notes": "Changelog zeigt direkt die Versionen, Datum und Änderungen: ohne Einleitung und doppelte Überschrift. Die Historie bis zum ersten Build 0.1.0 bleibt offline verfügbar. Vor dem Update Backup erstellen; bestehende App nicht deinstallieren.",
+  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.003/SeedNest-Native-Alpha.0.5.003.apk",
+  "sha256": "1dee0fe33903e8cae08593710d4622338e2fa8484b772022e967967c64e19c05",
   "size": 111856209
 }
