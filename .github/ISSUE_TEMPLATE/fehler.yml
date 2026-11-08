@@ -1,0 +1,44 @@
+name: Fehler melden
+description: Eine Funktion funktioniert nicht wie erwartet.
+title: "[Fehler] "
+body:
+  - type: markdown
+    attributes:
+      value: "Danke! Dieses Issue ist öffentlich. Keine API-Schlüssel, privaten Backups oder ungeschwärzten Rechnungen hochladen."
+  - type: input
+    id: version
+    attributes:
+      label: SeedNest-Version
+      placeholder: Alpha.0.5.001
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Handymodell und Android-Version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Fehler
+      description: Was hast du geöffnet oder angetippt?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Ergebnis
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Tatsächliches Ergebnis
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Weitere Informationen (freiwillig)
+      description: Screenshot, erkannter OCR-Text oder öffentliche Quelle. Persönliche Daten entfernen.
