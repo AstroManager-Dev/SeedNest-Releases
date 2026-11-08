@@ -277,11 +277,3 @@ Die Bezeichnungen Alpha 1–11 gehören hier zur Reihe **0.3.0** und sind nicht 
 - Etikettenvorschau und Android-Druckdialog/PDF.
 - Lokale WebView-Oberfläche in einer Android-Hülle; private SQLite-Speicherung, keine Registrierung oder Internetberechtigung.
 
-
-## Prüfstand und Abgrenzung
-
-Alpha 20: 264 bestandene JVM-Tests; Android-Build erfolgreich; Lint ohne Fehler, mit 44 Warnungen. Diese Prüfungen ersetzen keine vollständige Geräteabnahme von Kamera, Gemini, Benachrichtigungen und Hintergrundverhalten. Lokale KI bleibt experimentell.
-
-Die GitHub-basierte In-App-Updatefunktion ist ab Alpha.0.5.001 enthalten. Bluetooth-Druckeranbindung ist zurückgestellt.
-
-Grundlagen der frühen Historie: erhaltene README-Dateien 0.1.0–0.2.0, archivierter Quellstand 0.2.4, native README/Prüfberichte der Reihe 0.3.0. Grundlagen der Reihe 0.4.0: `TESTBERICHT_0.4.0_ALPHA1.md` bis `TESTBERICHT_0.4.0_ALPHA20.md`, `ROADMAP.md` und `ALPHA20_NEUERUNGEN.md` im dokumentierten Alpha-20-Projekt. Die bereits veröffentlichten APK- und Projektdateien wurden für diesen Changelog nicht geändert.
