@@ -1,8 +1,6 @@
-# SeedNest – Changelog
+## Alpha.0.5.003 · 08.11.2026
 
-Rückwirkend zusammengestellt aus den erhaltenen Projektständen seit dem ersten installierbaren Build **SeedNest 0.1.0** bis **Alpha.0.5.002**. Neueste Version zuerst. Quellstände ohne belegten APK-Build sind ausdrücklich gekennzeichnet. Datumsangaben nur, soweit dokumentiert.
-
-Dies ist eine Änderungshistorie: Frühere Einträge beschreiben den damaligen Stand. Spätere Änderungen ersetzen frühere Verhaltensweisen. Insbesondere ist die frühere Pi-Synchronisation seit Alpha 14 entfernt; seit Alpha 17 werden Samen beim Start eines aktuellen Runs automatisch abgebucht.
+- Changelog zeigt direkt die Versionen und Änderungen, ohne Einleitung und doppelte Überschrift.
 
 ## Alpha.0.5.002 · 08.11.2026
 
