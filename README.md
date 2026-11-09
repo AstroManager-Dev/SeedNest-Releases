@@ -20,6 +20,7 @@ SeedNest verwaltet Sorten, Samenbestände, Behälter und Lagerplätze. Dazu komm
 
 ## Dokumentation
 
+- [**Benutzerhandbuch (20 Kapitel)**](docs/BENUTZERHANDBUCH.md)
 - [Installation](docs/INSTALLATION.md)
 - [Updates und Veröffentlichungsablauf](docs/UPDATES.md)
 - [Kurze Anleitung für Tester](docs/TESTEN.md)
