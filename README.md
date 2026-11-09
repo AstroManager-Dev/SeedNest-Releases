@@ -63,3 +63,11 @@ Unter Lager → Tasche → PDF & Drucken lassen sich alle, nur neue/geänderte/v
 Updates versuchen vorübergehende Verbindungsfehler bis zu dreimal erneut; ein Browser-Link dient als Ausweichweg. Bei HTTP 504 in älteren App-Versionen den APK-Link im Browser mit `?download=1` öffnen und über die bestehende App installieren.
 
 Unter **Mehr → Fehler per E-Mail melden** ist kein GitHub-Konto nötig. Bericht und freiwilligen Diagnoseanhang vorher prüfen; anschließend selbst in der E-Mail-App an **m.nause79@gmail.com** versenden. Ohne Mail-App kannst du den Bericht kopieren.
+
+## Neu in Alpha.0.5.007
+
+Behälternummern sind fest: neue Nummern werden automatisch vergeben, vorhandene bleiben erhalten und lassen sich nicht mehr ändern. Umräumen ändert die Nummer nicht. Der Nummernzähler bleibt beim Löschen erhalten. Bei einer Wiederherstellung werden abweichende Nummern derselben Behälter-ID abgewiesen; der höhere Zähler bleibt erhalten.
+
+Für normales Papier innen in kleinen Dosen gibt es unter **PDF & Drucken → Dosenetiketten → Code auf Dosenetiketten** den längs angeordneten **Code-128-Strichcode**. Die Striche liegen quer zur Dose. QR bleibt auswählbar und alte QR-Etiketten funktionieren weiter. Zu lange oder ungeeignete Alt-Nummern erhalten automatisch QR.
+
+Nach dem Update einen neuen Etikettenbogen erstellen. Der Scanner erkennt beide Formate; bei Strichcodes bei Bedarf das Handy drehen. Reflexionen durch leichtes Drehen der Dose verschieben. Erst einen Probeausdruck auf normalem Papier in der echten Dose testen: Grafiktests können Rundung, Kamera und Plastik nicht vollständig nachbilden.
