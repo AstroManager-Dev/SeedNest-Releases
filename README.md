@@ -25,6 +25,7 @@ SeedNest verwaltet Sorten, Samenbestände, Behälter und Lagerplätze. Dazu komm
 ## Dokumentation
 
 - [**Benutzerhandbuch (20 Kapitel)**](docs/BENUTZERHANDBUCH.md)
+- [**Roadmap: Zentrale StrainDB, EAN-Scanner und Bezugsquellen**](docs/ROADMAP_STRAINDB.md)
 - [Installation](docs/INSTALLATION.md)
 - [Updates und Veröffentlichungsablauf](docs/UPDATES.md)
 - [Kurze Anleitung für Tester](docs/TESTEN.md)
