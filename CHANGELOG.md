@@ -1,3 +1,13 @@
+## Alpha.0.5.006 · 09.11.2026
+
+- PDF-Schrift präzise in großer Ausgangsgröße berechnen und erst danach skalieren: Rundungsfehler bei kleinen Buchstabenabständen behoben; native Grafiktests mit Vorher-/Nachher-Probe ergänzt.
+- Updates bei HTTP 502/503/504 und vorübergehenden Verbindungsabbrüchen bis zu dreimal versuchen. Frische Downloadanfragen, Fortschritt je Versuch und Browser-Ausweichlink.
+- Echte PDF-Vorschau mit Seitenwechsel und Zoom vor dem Speichern; Dateinamen mit Tasche, Datum, Uhrzeit und eindeutiger Kennung.
+- Etiketten: alle, nur neue/geänderte/vorgemerkte oder nur vorgemerkte drucken. Einzelne Sorten und Dosen für den nächsten Lager-Druck vormerken.
+- Lokalen Druckstatus erst nach ausdrücklicher Bestätigung aller gedruckten Etiketten speichern. Vorschau, Export und Abbruch markieren nichts als gedruckt. Der Druckstatus ist nicht Teil der Bestands-Sicherung.
+- Fehlerbericht direkt unter Mehr per E-Mail ohne GitHub-Konto. Vorschau, Kopierfunktion und freiwilliger Diagnoseanhang; Versand erfolgt in der eigenen E-Mail-App.
+- Diagnose nennt die aktuelle App-Version.
+
 ## Alpha.0.5.005 · 09.11.2026
 
 - PDF-Schrift für Etiketten und Taschenpläne als Vektorkonturen ausgegeben, damit PDF-Viewer die Buchstabenabstände nicht verändern.
