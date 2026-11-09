@@ -6,6 +6,8 @@ SeedNest ist eine native Android-App zur **privaten Verwaltung einer Samensammlu
 
 **Wichtig zum Entwicklungsstand:** SeedNest ist eine Alpha-Version. Das Handbuch beschreibt Funktionen, die im Quellcode von Alpha.0.5.007 vorhanden sind. Einzelne Funktionen können auf unterschiedlichen Android-Geräten abweichen. Die im Download-Repository veröffentlichte APK kann einen anderen Versionsstand haben.
 
+**Bei Problemen immer zuerst die aktuelle Version prüfen:** Öffne **Mehr → Updates** oder die [offiziellen GitHub-Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases). Ist eine neuere Version verfügbar, sichere wichtige Bestände und installiere das Update **über die vorhandene App**. Prüfe danach, ob der Fehler weiterhin auftritt. **Erst dann** einen Fehlerbericht erstellen. Wenn die App nicht startet, überprüfe die Releases im Browser und melde den Fehler mit der installierten Version. **Nicht deinstallieren**, solange du keine verifizierte Sicherung hast.
+
 **Kennzeichnungen:**
 - **Regulär:** Bestandteil der aktuellen App; Fehler sind während der Alpha-Phase trotzdem möglich.
 - **Optional:** Nur bei Bedarf nutzen; gegebenenfalls sind Internet, zusätzliche Apps oder Einstellungen notwendig.
@@ -269,9 +271,13 @@ Unter **Mehr → App & Hilfe → Darstellung & Darkmode** stehen **System folgen
 
 ### Updates
 
-Öffne **Mehr → Updates** zum Prüfen verfügbarer Versionen und Lesen der Änderungen. Ein Update wird bewusst gestartet; Android kann bei der Installation eine weitere Bestätigung verlangen. Vor Updates wichtige Daten sichern.
+**Alpha-Regel für jeden Fehler:** Immer zuerst unter **Mehr → Updates** nach einer neueren Version suchen, bevor du den Fehler meldest. Ein Fehler kann in einer späteren Alpha bereits behoben sein. Alternativ die [aktuell verfügbaren APKs auf GitHub](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) prüfen. Vor dem Update wichtige Daten sichern; die neue APK über die bestehende Installation installieren, **nicht deinstallieren**. Danach den ursprünglichen Fehler erneut prüfen. Wenn er weiterhin auftritt, mit App-Version und Schritten melden.
+
+Ein Update wird bewusst gestartet; Android kann bei der Installation eine weitere Bestätigung verlangen.
 
 ### Fehlerbericht
+
+**Vor dem Melden:** Zuerst **Mehr → Updates** prüfen, gegebenenfalls die neuere Alpha installieren und testen, ob der Fehler noch vorhanden ist. Falls SeedNest nicht startet, im Browser die [offiziellen Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) vergleichen. Niemals ungeprüft deinstallieren, um ein Update zu erzwingen.
 
 1. Öffne **Mehr → Fehler per E-Mail melden** oder **Mehr → App & Hilfe → Testanleitung & Fehlerbericht**.
 2. Trage einen kurzen Titel, die Schritte zum Fehler, das erwartete und das tatsächliche Verhalten ein.
@@ -281,6 +287,8 @@ Unter **Mehr → App & Hilfe → Darstellung & Darkmode** stehen **System folgen
 Die App versendet keine E-Mail ungefragt. Private Bestandsdateien, ungeschwärzte Rechnungen und API-Schlüssel nicht öffentlich weitergeben.
 
 ## 19. Häufige Fragen und Fehlerbehebung
+
+**Erste Maßnahme bei jedem Problem:** Prüfe **Mehr → Updates** beziehungsweise die offiziellen GitHub-Releases und installiere bei Bedarf ein neueres Alpha-Update, nachdem du ein Backup angelegt hast. Bleibt das Problem bestehen, nutze die folgenden Hinweise und melde den Fehler. Bei einer nicht startenden App den Versionsvergleich im Browser durchführen.
 
 ### Die Kamera erkennt meinen Code nicht.
 
