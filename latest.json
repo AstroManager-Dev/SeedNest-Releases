@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "applicationId": "de.seednest.app",
-  "versionCode": 44,
-  "versionName": "Alpha.0.5.005",
-  "tag": "Alpha.0.5.005",
-  "notes": "PDF-Schriftkorrektur für Etiketten und Taschenpläne: Vektorkonturen halten Buchstabenabstände unabhängig vom PDF-Viewer fest. Größen, Schnittlinien und QR-Codes bleiben erhalten. Gespeicherte PDFs bitte neu exportieren. Vor dem Update Backup erstellen; App nicht deinstallieren.",
-  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.005/SeedNest-Native-Alpha.0.5.005.apk",
-  "sha256": "a7816109e095d25d1d1b75cebd7f3443206dc70957f56ce49e48480b836453e9",
-  "size": 111921745
+  "versionCode": 45,
+  "versionName": "Alpha.0.5.006",
+  "tag": "Alpha.0.5.006",
+  "notes": "Präzise PDF-Schrift mit Grafiktests. PDF-Vorschau mit Zoom und Seitenwechsel; eindeutige Dateinamen. Updates mit drei Versuchen bei vorübergehenden Fehlern und Browser-Ausweichlink. Direkter E-Mail-Fehlerbericht mit freiwilligem Diagnoseanhang. Etiketten: alle, nur neue/geänderte oder vorgemerkte; gezielter Neudruck. Druckstatus erst nach ausdrücklicher Druckbestätigung, lokal und außerhalb der Bestands-Sicherung. PDFs neu exportieren. Vor dem Update Backup erstellen; nicht deinstallieren.",
+  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.006/SeedNest-Native-Alpha.0.5.006.apk",
+  "sha256": "ae9d27aecc1e00a4ecf20907cf81c684352915d3da68dcb2ddda1ec61bf125d2",
+  "size": 113052241
 }
