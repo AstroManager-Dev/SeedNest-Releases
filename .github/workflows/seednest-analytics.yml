@@ -1,0 +1,67 @@
+name: SeedNest Download Dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 5 * * *'  # taeglich 05:23 UTC (kann sich verzoegern)
+  push:
+    branches: [main]
+    paths:
+      - 'stats/**'
+      - '.github/workflows/seednest-analytics.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: seednest-analytics-pages
+  cancel-in-progress: false
+
+jobs:
+  collect-and-deploy:
+    name: Downloads speichern und GitHub Pages aktualisieren
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Repository abrufen
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Downloadzaehler erfassen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 stats/collect.py
+
+      - name: Tageshistorie speichern
+        run: |
+          if ! git diff --quiet -- stats/data/history.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add stats/data/history.json
+            git commit -m "stats: save daily APK download snapshot [skip ci]"
+            git push
+          else
+            echo "Kein neuer Tagesstand."
+          fi
+
+      - name: GitHub Pages konfigurieren
+        uses: actions/configure-pages@v5
+
+      - name: Website-Paket erstellen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: stats
+
+      - name: Dashboard veroeffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4
