@@ -18,6 +18,8 @@ SeedNest verwaltet Sorten, Samenbestände, Behälter und Lagerplätze. Dazu komm
 | PDF & Druck | Taschenplan, 60 × 30-mm-Dosenetiketten, eigene Größen, Vorschau und gezielter Neudruck |
 | Sicherung | ZIP-Backup, optional verschlüsselte Sicherung und Wiederherstellungsvorschau |
 
+**Experimenteller Status:** Rechnungs-Scan/OCR und lokale KI befinden sich weiterhin in Erprobung. Erfasste Positionen und KI-Vorschläge vor jeder Übernahme kontrollieren.
+
 ## Dokumentation
 
 - [**Benutzerhandbuch (20 Kapitel)**](docs/BENUTZERHANDBUCH.md)
