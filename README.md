@@ -18,6 +18,8 @@ SeedNest verwaltet Sorten, Samenbestände, Behälter und Lagerplätze. Dazu komm
 | PDF & Druck | Taschenplan, 60 × 30-mm-Dosenetiketten, eigene Größen, Vorschau und gezielter Neudruck |
 | Sicherung | ZIP-Backup, optional verschlüsselte Sicherung und Wiederherstellungsvorschau |
 
+**Alpha-Fehlerregel:** Wenn ein Problem auftritt, **zuerst nach einer neueren APK unter [Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) oder in der App unter Mehr → Updates suchen**. Vor dem Update sichern, über die bestehende App installieren, Fehler erneut prüfen und erst dann melden. Bei Startproblemen die Releases im Browser prüfen; nicht vorschnell deinstallieren.
+
 **Experimenteller Status:** Rechnungs-Scan/OCR und lokale KI befinden sich weiterhin in Erprobung. Erfasste Positionen und KI-Vorschläge vor jeder Übernahme kontrollieren.
 
 ## Dokumentation
