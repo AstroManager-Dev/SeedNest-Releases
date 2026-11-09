@@ -1,5 +1,7 @@
 # SeedNest – Roadmap: Europaweite StrainDB und Bezugsquellen
 
+**Sprache / Language:** **🇩🇪 Deutsch** | [🇬🇧 English](ROADMAP_STRAINDB_EN.md)
+
 **Status: In Vorbereitung – noch kein öffentlich nutzbarer Cloud-Katalog.** Der bestehende private Sortenkatalog in SeedNest bleibt unabhängig und offline nutzbar.
 
 ## Ziel
