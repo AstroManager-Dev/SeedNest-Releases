@@ -8,6 +8,8 @@ Danke fürs Ausprobieren! Beginne mit ein paar Testeinträgen; bei vorhandenem B
 - **Übersicht:** Suche, Favoriten, Sortierung, Listenansichten und Rückkehr aus einem Profil testen. Auto und Photo sollen getrennt bleiben.
 - **Recherche:** Optional eigenen Gemini-Schlüssel einrichten, eine Sorte recherchieren und Quellen mit der Vorschau vergleichen.
 - **Run:** Sorten und Mengen planen. Beim Start eines aktuellen Runs werden Samen vom Bestand abgezogen; Beenden erstattet verbrauchte Samen nicht.
+- **Behälternummer:** Neue Dose erhält automatisch eine feste Nummer. Bearbeiten und Umräumen dürfen diese nicht ändern.
+- **Dosen-Strichcode:** Neuen Bogen mit Code 128 drucken, Papier innen einlegen und scannen; Handy beziehungsweise Dose bei Bedarf drehen. Alte QR-Etiketten ebenfalls testen.
 - **Etiketten:** Neue PDF erstellen, Vorschau und Zoom prüfen. Erst alle tatsächlich gedruckten Etiketten bestätigen. Danach „nur neue“ und vorgemerkten Neudruck testen; Abbruch darf keinen Druckstatus setzen.
 - **Updates:** Unter Mehr → Updates & Changelog prüfen und die Offline-Historie öffnen.
 
