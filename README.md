@@ -1,5 +1,7 @@
 # SeedNest – Android-Testversionen
 
+**Sprache / Language:** **🇩🇪 Deutsch** | [🇬🇧 English](README_EN.md)
+
 ![Status: Alpha](https://img.shields.io/badge/Status-Alpha-orange)
 ![Android: 8+](https://img.shields.io/badge/Android-8%2B-green)
 
