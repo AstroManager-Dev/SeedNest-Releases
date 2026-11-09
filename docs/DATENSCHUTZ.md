@@ -21,3 +21,7 @@ Die Updateprüfung ruft öffentliche Versionsinformationen ab. Beim Download wir
 ## Fehlerberichte
 
 Berichte werden bewusst über die E-Mail-App oder öffentliche GitHub-Issues erstellt. Prüfe Anhänge vor dem Senden. Diagnose und Screenshots sind freiwillig. Öffentliche Issues sind öffentlich lesbar: keine Schlüssel, privaten Backups oder ungeschwärzten Rechnungen anhängen.
+
+## Freiwillige Unterstützung
+
+Der Unterstützungslink öffnet die externe PayPal-Seite `https://paypal.me/Mmbaby2016`. SeedNest hängt keine Bestandsdaten, Fotos oder API-Schlüssel an. Auf der PayPal-Seite gelten die Bedingungen und Datenverarbeitung des Anbieters. SeedNest erfasst keine Kontodaten, Beträge oder Zahlungsbestätigungen und zeigt keinen selbst ermittelten Zahlungsstatus an.
