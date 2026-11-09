@@ -1,5 +1,7 @@
 # Kurze Testanleitung
 
+**Sprache / Language:** **🇩🇪 Deutsch** | [🇬🇧 English](TESTEN_EN.md)
+
 Danke fürs Ausprobieren! Beginne mit ein paar Testeinträgen; bei vorhandenem Bestand vorher ein vollständiges Backup außerhalb der App sichern.
 
 - **Anlegen:** Plus öffnen und Sorte manuell oder per Verpackungsfoto erfassen. Erkannte Angaben und tatsächliche Samenanzahl vor Speichern prüfen.
