@@ -10,12 +10,19 @@ Ein großer, europaweiter, **lizenzierter** Katalog mit Sorteninformationen von 
 
 - [ ] Verifizierte Sorten- und Breeder-Datensätze, bevorzugt Deutsch; englische Originaldaten möglich.
 - [ ] Nachvollziehbare Genetik, Varianten (Feminisiert/Regulär, Auto/Photo, Fast/F1), Indica/Sativa/Ruderalis, THC/CBD, Aroma/Terpene, Blütezeit, Ertrag und Quellen.
-- [ ] **EAN/GTIN-/UPC-Erkennung beim Verpackungsscan**, alternativ Foto/OCR für unbekannte Produkte; Zuordnung über Sorte, Hersteller, Packungsvariante und Samenanzahl.
+- [ ] **EAN/GTIN-/UPC-Erkennung beim Verpackungsscan**, alternativ Foto/OCR für unbekannte Produkte; Zuordnung über Sorte, Hersteller, Packungsvariante und Samenanzahl. **Im Entwicklungsbranch vorbereitet:** EAN-8/EAN-13, UPC-A und GTIN-14, mit Trefferanzeige inklusive Verkaufseinheit.
 - [ ] **Bezugsquellen direkt im Sortenprofil:** Händlername, direkter Produktlink, Packungsgrößen, Varianten, SKU/EAN, optional Preis, Währung, Verfügbarkeit und Prüfdatum.
 - [ ] Mehrere Produkt-EANs und Händlerangebote je Sorte unterstützen; eigene Bezugsquellen lokal anlegen.
 - [ ] Datenschutzfreundliche Cloud-Suche und optionaler Offline-Cache; private Samenbestände, Lagerorte und Buchungen bleiben lokal.
 - [ ] Europäische Seedbanks/Datenplattformen um **schriftliche Daten-, Bild-, Übersetzungs- und Weiterveröffentlichungsrechte** bitten.
 - [ ] Qualitätssicherung, Herkunftskennzeichnung, Quellenkonflikte, Dubletten, Katalogupdates und Änderungsprotokoll.
+
+## Geplanter Suchablauf
+
+1. **Breeder auswählen:** Hersteller zuerst suchen und auswählen.
+2. **Strain auswählen:** Nur Sorten dieses Breeders anzeigen und durchsuchen.
+3. **Oder EAN/GTIN scannen:** Bei einem Treffer die exakte Produktvariante mit **Samen pro Packung (Verkaufseinheit)**, Hersteller, Händler und Artikelnummer anzeigen.
+4. **Nach Bestätigung Sorte übernehmen:** Eine Verkaufseinheit ist **kein tatsächlich vorhandener Lagerbestand**. Samenmengen müssen später separat bestätigt werden.
 
 ## CloudBase-Schnittstelle
 
