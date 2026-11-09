@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "applicationId": "de.seednest.app",
-  "versionCode": 42,
-  "versionName": "Alpha.0.5.003",
-  "tag": "Alpha.0.5.003",
-  "notes": "Changelog zeigt direkt die Versionen, Datum und Änderungen: ohne Einleitung und doppelte Überschrift. Die Historie bis zum ersten Build 0.1.0 bleibt offline verfügbar. Vor dem Update Backup erstellen; bestehende App nicht deinstallieren.",
-  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.003/SeedNest-Native-Alpha.0.5.003.apk",
-  "sha256": "1dee0fe33903e8cae08593710d4622338e2fa8484b772022e967967c64e19c05",
-  "size": 111856209
+  "versionCode": 43,
+  "versionName": "Alpha.0.5.004",
+  "tag": "Alpha.0.5.004",
+  "notes": "Mehr übersichtlicher, Schwarz-Weiß-Grau-Darkmode und Systemoption. A4-Taschenpläne und Dosenetiketten als PDF oder Druck; Taschenetiketten 60 × 30 mm mit Sorte, Breeder und QR. Freie Etikettengrößen und eigene Vorlagen. Freiwillige Unterstützung über PayPal.Me. Vor dem Update Backup erstellen; App nicht deinstallieren.",
+  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.004/SeedNest-Native-Alpha.0.5.004.apk",
+  "sha256": "4daf34f91d247533cfd458035b7c6b395938b2b10a28f39a4600d340b2c77788",
+  "size": 111929937
 }
