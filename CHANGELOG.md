@@ -1,3 +1,11 @@
+## Alpha.0.5.007 · 09.11.2026
+
+- Behälternummern automatisch fest vergeben, im Formular schreibgeschützt und zusätzlich in Datenlogik und Speicherung gegen Änderungen gesichert. Bestehende Nummern bleiben unverändert.
+- Fortlaufenden Zähler im Bestand sichern; automatisch vergebene Nummern nach dem Löschen nicht erneut verwenden. Bei Wiederherstellung im selben Bestand wird der höhere Zähler erhalten; abweichende Nummern derselben Behälter-ID werden abgewiesen.
+- Dosenetiketten für Papier innen mit längs angeordnetem Code-128-Strichcode anbieten. QR bleibt auswählbar; ungeeignete oder zu lange alte Nummern erhalten automatisch einen QR-Code.
+- Scanner erkennt QR und Code 128. Alte QR-Etiketten bleiben gültig. Bei Strichcodes bei Bedarf das Handy drehen und Reflexionen durch leichtes Drehen der Dose vermeiden.
+- Druckstatus berücksichtigt den gewählten Codetyp. Nummern-, Barcode- und Grafiktests einschließlich simulierter Reflexion ergänzen die Prüfung; echte Dosen bleiben auf dem Handy zu testen.
+
 ## Alpha.0.5.006 · 09.11.2026
 
 - PDF-Schrift präzise in großer Ausgangsgröße berechnen und erst danach skalieren: Rundungsfehler bei kleinen Buchstabenabständen behoben; native Grafiktests mit Vorher-/Nachher-Probe ergänzt.
