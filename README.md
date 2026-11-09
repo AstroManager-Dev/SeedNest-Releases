@@ -15,6 +15,7 @@ SeedNest verwaltet Sorten, Samenbestände, Behälter und Lagerplätze. Dazu komm
 | Erfassung | Verpackungsfoto, Bildauswahl und Rechnungsimport mit Vorschau |
 | Planung | Einkaufsliste, Next Run und aktueller Run mit bestätigtem Start |
 | Recherche | Optional Gemini mit eigenem Schlüssel, Quellenprüfung und Übersetzung |
+| PDF & Druck | Taschenplan, 60 × 30-mm-Dosenetiketten, eigene Größen, Vorschau und gezielter Neudruck |
 | Sicherung | ZIP-Backup, optional verschlüsselte Sicherung und Wiederherstellungsvorschau |
 
 ## Dokumentation
@@ -52,3 +53,13 @@ Wenn dir SeedNest gefällt, kannst du die Weiterentwicklung mit einem freiwillig
 **[Mit PayPal unterstützen ❤️](https://paypal.me/Mmbaby2016)**
 
 Der Link öffnet die externe PayPal-Seite. Ab Alpha.0.5.004 findest du ihn auch in der App unter **Mehr → SeedNest unterstützen**. Die Entscheidung über eine Zahlung erfolgt auf PayPal; SeedNest verarbeitet keine Zahlungsdaten.
+
+## Neu in Alpha.0.5.006
+
+PDF-Schrift mit nativen Grafiktests abgesichert. Vor dem Speichern kannst du die PDF in SeedNest mit Seitenwechsel und Zoom prüfen. Dateinamen enthalten Tasche, Datum, Uhrzeit und eine eindeutige Kennung.
+
+Unter Lager → Tasche → PDF & Drucken lassen sich alle, nur neue/geänderte/vorgemerkte oder nur vorgemerkte Etiketten auswählen. In der einzelnen Sorte oder Dose kannst du einen Neudruck vormerken. Nach dem tatsächlichen Druck **alle Etiketten dieses Auftrags ausdrücklich bestätigen**. Bei Vorschau, Export, Abbruch oder nur teilweise gedruckten Seiten nicht bestätigen. Druckstatus bleibt lokal auf diesem Gerät und ist nicht Teil der Bestands-Sicherung.
+
+Updates versuchen vorübergehende Verbindungsfehler bis zu dreimal erneut; ein Browser-Link dient als Ausweichweg. Bei HTTP 504 in älteren App-Versionen den APK-Link im Browser mit `?download=1` öffnen und über die bestehende App installieren.
+
+Unter **Mehr → Fehler per E-Mail melden** ist kein GitHub-Konto nötig. Bericht und freiwilligen Diagnoseanhang vorher prüfen; anschließend selbst in der E-Mail-App an **m.nause79@gmail.com** versenden. Ohne Mail-App kannst du den Bericht kopieren.
