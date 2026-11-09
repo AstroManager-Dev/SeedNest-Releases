@@ -22,6 +22,10 @@ Die Updateprüfung ruft öffentliche Versionsinformationen ab. Beim Download wir
 
 Berichte werden bewusst über die E-Mail-App oder öffentliche GitHub-Issues erstellt. Prüfe Anhänge vor dem Senden. Diagnose und Screenshots sind freiwillig. Öffentliche Issues sind öffentlich lesbar: keine Schlüssel, privaten Backups oder ungeschwärzten Rechnungen anhängen.
 
+Der direkte E-Mail-Bericht enthält App-Version, Android und Gerätemodell sowie deine eingegebenen Angaben. Nur auf Wunsch wird eine zuvor angezeigte Diagnose-JSON mit lokalen Betriebsmetadaten beigefügt. Bestandsdaten, Bilder und API-Schlüssel werden nicht automatisch angehängt. Diagnoseanhänge liegen vorübergehend im App-Cache; beim Erstellen weiterer Anhänge werden Dateien über sieben Tage entfernt, Android kann Cache-Dateien früher entfernen. Du bestätigst den Versand in deiner eigenen E-Mail-App. Ein GitHub-Konto wird dafür nicht benötigt.
+
+PDFs enthalten die bewusst ausgewählten Lager- und Etikettenangaben. Vorschau und Druckstatus bleiben lokal; erst beim selbst gestarteten Speichern, Drucken oder Teilen werden diese Daten an das gewählte Ziel übergeben. Druckstatus ist nicht in der Bestands-Sicherung enthalten.
+
 ## Freiwillige Unterstützung
 
 Der Unterstützungslink öffnet die externe PayPal-Seite `https://paypal.me/Mmbaby2016`. SeedNest hängt keine Bestandsdaten, Fotos oder API-Schlüssel an. Auf der PayPal-Seite gelten die Bedingungen und Datenverarbeitung des Anbieters. SeedNest erfasst keine Kontodaten, Beträge oder Zahlungsbestätigungen und zeigt keinen selbst ermittelten Zahlungsstatus an.
