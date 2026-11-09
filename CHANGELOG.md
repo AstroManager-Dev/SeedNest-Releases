@@ -1,3 +1,9 @@
+## Alpha.0.5.005 · 09.11.2026
+
+- PDF-Schrift für Etiketten und Taschenpläne als Vektorkonturen ausgegeben, damit PDF-Viewer die Buchstabenabstände nicht verändern.
+- Schriftmessung und Umbruch verwenden dieselbe Schrift; Etikettengrößen, Schnittlinien und QR-Codes bleiben erhalten.
+- Bereits gespeicherte PDFs bitte neu erzeugen. Textkonturen sind druckscharf, aber nicht als Text markierbar oder durchsuchbar.
+
 ## Alpha.0.5.004 · 08.11.2026
 
 - Mehr aufgeräumt: vier Schnellzugriffe und vier aufklappbare Bereiche, Updates direkt oben.
