@@ -8,11 +8,12 @@ Danke fürs Ausprobieren! Beginne mit ein paar Testeinträgen; bei vorhandenem B
 - **Übersicht:** Suche, Favoriten, Sortierung, Listenansichten und Rückkehr aus einem Profil testen. Auto und Photo sollen getrennt bleiben.
 - **Recherche:** Optional eigenen Gemini-Schlüssel einrichten, eine Sorte recherchieren und Quellen mit der Vorschau vergleichen.
 - **Run:** Sorten und Mengen planen. Beim Start eines aktuellen Runs werden Samen vom Bestand abgezogen; Beenden erstattet verbrauchte Samen nicht.
+- **Etiketten:** Neue PDF erstellen, Vorschau und Zoom prüfen. Erst alle tatsächlich gedruckten Etiketten bestätigen. Danach „nur neue“ und vorgemerkten Neudruck testen; Abbruch darf keinen Druckstatus setzen.
 - **Updates:** Unter Mehr → Updates & Changelog prüfen und die Offline-Historie öffnen.
 
 ## Rückmeldung
 
-[Fehler oder Vorschlag erstellen](https://github.com/AstroManager-Dev/SeedNest-Releases/issues/new/choose) oder die Fehlerberichtsfunktion in der App nutzen.
+[Fehler oder Vorschlag erstellen](https://github.com/AstroManager-Dev/SeedNest-Releases/issues/new/choose) oder unter **Mehr → Fehler per E-Mail melden** ohne GitHub-Konto berichten. Diagnoseanhang ist freiwillig, Versand erfolgt selbst in der E-Mail-App.
 
 Bitte App-Version, Handymodell, Android-Version, Schritte sowie erwartetes und tatsächliches Ergebnis nennen. Screenshot oder Diagnose nur freiwillig beifügen. Bei OCR-Problemen hilft der erkannte Text. Bei Rechercheproblemen bitte Sorte, Breeder, Auto/Photo und Quellenlink nennen.
 
