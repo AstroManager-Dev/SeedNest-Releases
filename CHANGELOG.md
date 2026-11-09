@@ -1,3 +1,14 @@
+## Alpha.0.5.004 · 08.11.2026
+
+- Mehr aufgeräumt: vier Schnellzugriffe und vier aufklappbare Bereiche, Updates direkt oben.
+- Neuer Schwarz-Weiß-Grau-Darkmode für die gesamte Oberfläche; zusätzlich System folgen und gespeicherte Designauswahl.
+- A4-Taschenplan mit Belegung aller Ebenen, Deckelnetz und Dosen ohne festen Platz als PDF speichern oder drucken.
+- Dosenetiketten für Lagertaschen starten mit 60 × 30 mm und 24 Etiketten je A4-Seite: Sorte, Breeder, Behältercode, Auto/Photo und QR.
+- Andere Etiketten für Sorten, einzelne Dosen und Lagerorte in Millimetern einstellen; eigene benannte Vorlagen speichern, auswählen und löschen.
+- Lagerort-QR-Codes öffnen den passenden Bereich in der App.
+- SeedNest unter Mehr freiwillig über PayPal.Me unterstützen.
+- Unterstützung öffnet die externe PayPal-Seite; Betrag und Zahlung werden dort selbst gewählt.
+
 ## Alpha.0.5.003 · 08.11.2026
 
 - Changelog zeigt direkt die Versionen und Änderungen, ohne Einleitung und doppelte Überschrift.
@@ -278,4 +289,3 @@ Die Bezeichnungen Alpha 1–11 gehören hier zur Reihe **0.3.0** und sind nicht 
 - Vollständige JSON-Sicherung und separater Rechercheaustausch ohne private Bestandsangaben.
 - Etikettenvorschau und Android-Druckdialog/PDF.
 - Lokale WebView-Oberfläche in einer Android-Hülle; private SQLite-Speicherung, keine Registrierung oder Internetberechtigung.
-
