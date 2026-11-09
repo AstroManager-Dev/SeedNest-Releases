@@ -44,3 +44,11 @@ Android 8 oder neuer. Die Alpha-Version dient zum Testen; Kamera, Erkennungsqual
 Bei Fehlern bitte App-Version, Handymodell, Android-Version, Schritte und erwartetes/tatsächliches Ergebnis nennen. API-Schlüssel, private Bestandsbackups und ungeschwärzte Rechnungen gehören nicht in öffentliche Issues.
 
 Dieses Repository dient der Veröffentlichung von Downloads, Versionsinformationen und Anleitungen. Die öffentliche Updateinformation liegt in `latest.json`. Ein GitHub-Konto ist für Download und Updateprüfung nicht erforderlich.
+
+## SeedNest freiwillig unterstützen
+
+Wenn dir SeedNest gefällt, kannst du die Weiterentwicklung mit einem freiwilligen Beitrag unterstützen. Den Betrag bestimmst du selbst.
+
+**[Mit PayPal unterstützen ❤️](https://paypal.me/Mmbaby2016)**
+
+Der Link öffnet die externe PayPal-Seite. Ab Alpha.0.5.004 findest du ihn auch in der App unter **Mehr → SeedNest unterstützen**. Die Entscheidung über eine Zahlung erfolgt auf PayPal; SeedNest verarbeitet keine Zahlungsdaten.
