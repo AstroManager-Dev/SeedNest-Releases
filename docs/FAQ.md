@@ -17,3 +17,5 @@
 **Wo sind Änderungen dokumentiert?** Im [Changelog](../CHANGELOG.md) sowie offline unter Mehr → Updates & Changelog.
 
 **Wurde alles auf jedem Handy getestet?** Nein. Alpha-Versionen benötigen Rückmeldungen von verschiedenen Geräten. Automatische Tests ersetzen keine vollständige Geräteprüfung.
+
+**Wie kann ich die Entwicklung unterstützen?** Unter Mehr → SeedNest unterstützen oder über den [PayPal.Me-Link](https://paypal.me/Mmbaby2016) im README. Unterstützung ist freiwillig; Betrag und Zahlung bestimmst du auf PayPal selbst.
