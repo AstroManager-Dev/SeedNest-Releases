@@ -3,7 +3,7 @@
 ![Status: Alpha](https://img.shields.io/badge/Status-Alpha-orange)
 ![Android: 8+](https://img.shields.io/badge/Android-8%2B-green)
 
-**[APK herunterladen](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) · [Installation](docs/INSTALLATION.md) · [Testanleitung](docs/TESTEN.md) · [Changelog](CHANGELOG.md) · [Feedback](https://github.com/AstroManager-Dev/SeedNest-Releases/issues/new/choose)**
+**[APK herunterladen](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) · [Installation](docs/INSTALLATION.md) · [Benutzerhandbuch](docs/BENUTZERHANDBUCH.md) · [Testanleitung](docs/TESTEN.md) · [Changelog](CHANGELOG.md) · [Feedback](https://github.com/AstroManager-Dev/SeedNest-Releases/issues/new/choose)**
 
 SeedNest verwaltet Sorten, Samenbestände, Behälter und Lagerplätze. Dazu kommen Verpackungsscan, Rechnungsimport, Einkaufslisten, Run-Planung und optionale Gemini-Recherche.
 
