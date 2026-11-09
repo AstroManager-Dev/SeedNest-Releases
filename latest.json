@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "applicationId": "de.seednest.app",
-  "versionCode": 45,
-  "versionName": "Alpha.0.5.006",
-  "tag": "Alpha.0.5.006",
-  "notes": "Präzise PDF-Schrift mit Grafiktests. PDF-Vorschau mit Zoom und Seitenwechsel; eindeutige Dateinamen. Updates mit drei Versuchen bei vorübergehenden Fehlern und Browser-Ausweichlink. Direkter E-Mail-Fehlerbericht mit freiwilligem Diagnoseanhang. Etiketten: alle, nur neue/geänderte oder vorgemerkte; gezielter Neudruck. Druckstatus erst nach ausdrücklicher Druckbestätigung, lokal und außerhalb der Bestands-Sicherung. PDFs neu exportieren. Vor dem Update Backup erstellen; nicht deinstallieren.",
-  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.006/SeedNest-Native-Alpha.0.5.006.apk",
-  "sha256": "ae9d27aecc1e00a4ecf20907cf81c684352915d3da68dcb2ddda1ec61bf125d2",
-  "size": 113052241
+  "versionCode": 46,
+  "versionName": "Alpha.0.5.007",
+  "tag": "Alpha.0.5.007",
+  "notes": "Feste Behälternummern: automatisch vergeben, vorhandene Nummern erhalten und gegen Änderung geschützt. Fortlaufenden Zähler sichern; automatisch vergebene Nummern nach Löschen nicht erneut verwenden. Dosenetiketten für Papier innen mit längs angeordnetem Code-128-Strichcode; QR bleibt auswählbar und alte QR-Etiketten bleiben gültig. Scanner erkennt beide Formate. Nach dem Update Etiketten neu erstellen und in der Dose testen; bei Bedarf Handy oder Dose drehen. Vorher Backup sichern; nicht deinstallieren.",
+  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.007/SeedNest-Native-Alpha.0.5.007.apk",
+  "sha256": "dbc0e1c79bbad0d654b7f557e809fa988c8e3957ed8566a7f5ab7a2d08d15c07",
+  "size": 112306769
 }
