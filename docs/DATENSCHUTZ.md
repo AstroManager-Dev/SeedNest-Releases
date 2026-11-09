@@ -29,3 +29,7 @@ PDFs enthalten die bewusst ausgewählten Lager- und Etikettenangaben. Vorschau u
 ## Freiwillige Unterstützung
 
 Der Unterstützungslink öffnet die externe PayPal-Seite `https://paypal.me/Mmbaby2016`. SeedNest hängt keine Bestandsdaten, Fotos oder API-Schlüssel an. Auf der PayPal-Seite gelten die Bedingungen und Datenverarbeitung des Anbieters. SeedNest erfasst keine Kontodaten, Beträge oder Zahlungsbestätigungen und zeigt keinen selbst ermittelten Zahlungsstatus an.
+
+## Etiketten-Codes
+
+Code 128 enthält die lokale Behälternummer; QR-Codes enthalten die dauerhafte interne Kennung. Mengen und Lagerplätze werden nicht in den Codes gespeichert. Die Zuordnung beim SeedNest-Scan erfolgt lokal in der Sammlung.
