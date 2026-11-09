@@ -1,5 +1,7 @@
 # Installation
 
+**Sprache / Language:** **🇩🇪 Deutsch** | [🇬🇧 English](INSTALLATION_EN.md)
+
 SeedNest benötigt Android 8 oder neuer.
 
 1. Unter [Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) die APK der gewünschten Version herunterladen.
