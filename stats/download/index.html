@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0d1815">
+  <title>SeedNest – aktuelle Android-APK herunterladen</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #09130f; color: #f2f7f4; padding: 1.25rem; }
+    main { width: min(100%, 32rem); border: 1px solid #294339; border-radius: 1.25rem; padding: clamp(1.5rem, 5vw, 2.5rem); background: #13231b; box-shadow: 0 18px 55px #0005; }
+    .eyebrow { color: #9cdfb2; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; font-size: .75rem; }
+    h1 { margin: .5rem 0 1rem; line-height: 1.15; font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    p { color: #c4d6cd; line-height: 1.6; }
+    strong { color: #fff; }
+    .status { border-radius: .7rem; padding: .9rem 1rem; background: #1c3025; margin: 1.25rem 0; min-height: 3.2rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.2rem; }
+    a.button { display: inline-block; padding: .82rem 1.05rem; border: 1px solid #6ad399; border-radius: .65rem; text-decoration: none; font-weight: 700; color: #082214; background: #8ee8ad; }
+    a.button.secondary { background: transparent; color: #c5edd2; border-color: #557362; }
+    a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+    small { color: #abc3b4; line-height: 1.5; display: block; margin-top: 1.2rem; }
+    footer { padding-top: 1.5rem; font-size: .83rem; color: #b9d3c4; }
+    footer a { color: #b2f6c6; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">SeedNest · Android Alpha</div>
+    <h1>Aktuelle Version herunterladen</h1>
+    <p>Hier findest du automatisch die <strong>aktuell freigegebene und im SeedNest-Update-Feed veröffentlichte APK</strong> – auch bei Alpha- und Prerelease-Versionen.</p>
+    <div id="status" class="status" role="status" aria-live="polite">Version wird sicher ermittelt …</div>
+    <div class="actions">
+      <a id="download" class="button" href="https://github.com/AstroManager-Dev/SeedNest-Releases/releases">Alle Releases anzeigen</a>
+      <a class="button secondary" href="https://github.com/AstroManager-Dev/SeedNest-Releases/releases">Andere Versionen</a>
+    </div>
+    <small>Vor dem Update: Backup der Sammlung außerhalb der App erstellen. Die APK über die bestehende Installation installieren, SeedNest nicht vorher deinstallieren.</small>
+    <footer><a href="../">Downloadstatistik</a> · <a href="https://github.com/AstroManager-Dev/SeedNest-Releases/blob/main/docs/INTEGRITAET.md">Prüfsummen & Signatur</a> · <a href="https://github.com/AstroManager-Dev/SeedNest-Releases">Projektübersicht</a></footer>
+  </main>
+  <script>
+  "use strict";
+  (async function () {
+    const status = document.getElementById("status");
+    const link = document.getElementById("download");
+    const fallback = "https://github.com/AstroManager-Dev/SeedNest-Releases/releases";
+    try {
+      // Same-origin snapshot is built from root latest.json by the existing Pages workflow.
+      // The root manifest remains the sole source of truth, including alpha/prereleases.
+      const response = await fetch("../latest.json", { cache: "no-store" });
+      if (!response.ok) throw new Error("Versionsdatei nicht erreichbar");
+      const data = await response.json();
+      if (!data || data.schemaVersion !== 1 || data.applicationId !== "de.seednest.app"
+        || !Number.isSafeInteger(data.versionCode) || data.versionCode <= 0
+        || !Number.isSafeInteger(data.size) || data.size <= 0
+        || typeof data.versionName !== "string" || data.versionName !== data.tag
+        || !/^Alpha\.[0-9]+\.[0-9]+\.[0-9]+$/.test(data.tag)
+        || typeof data.sha256 !== "string" || !/^[a-f0-9]{64}$/i.test(data.sha256)) {
+        throw new Error("Versionsdatei ungültig");
+      }
+      const expected = "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/"
+        + encodeURIComponent(data.tag) + "/SeedNest-Native-" + encodeURIComponent(data.tag) + ".apk";
+      if (data.apkUrl !== expected) throw new Error("Unbekannte Downloadadresse");
+      status.textContent = "Version " + data.tag + " · " + (data.size / 1000000).toFixed(1)
+        + " MB · Download über GitHub Releases.";
+      link.textContent = "APK " + data.tag + " herunterladen";
+      link.href = expected;
+      link.setAttribute("rel", "noopener");
+      // ?manual=1 disables automatic redirection, useful for verifying the page.
+      if (new URLSearchParams(location.search).get("manual") !== "1") {
+        status.textContent += " Weiterleitung startet …";
+        window.location.replace(expected);
+      }
+    } catch (error) {
+      status.textContent = "Automatische Ermittlung derzeit nicht möglich. Bitte die offizielle Release-Seite verwenden.";
+      link.textContent = "Releases öffnen";
+      link.href = fallback;
+    }
+  })();
+  </script>
+</body>
+</html>
