@@ -16,7 +16,7 @@
 
 | | |
 |---|---|
-| **Android-App herunterladen** | **[Offizielle GitHub Releases – APK & SHA-256](https://github.com/AstroManager-Dev/SeedNest-Releases/releases)** |
+| **Android-App herunterladen** | **[Aktuelle APK direkt herunterladen](https://astromanager-dev.github.io/SeedNest-Releases/download/)** · [Alle Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) |
 | **Zuletzt geprüfte Veröffentlichung** | [Alpha.0.5.007](https://github.com/AstroManager-Dev/SeedNest-Releases/releases/tag/Alpha.0.5.007) · Android 8+ · Alpha-Testversion |
 | **Neueste Versionsdaten** | [latest.json](latest.json) · Von der SeedNest-Updatefunktion verwendet |
 | **Vor dem Installieren** | [Installationsanleitung](docs/INSTALLATION.md) · [Prüfsummen & sichere Updates](docs/INTEGRITAET.md) |
@@ -57,7 +57,7 @@
 | Für Nutzerinnen und Nutzer | Für Tester und Interessierte |
 |---|---|
 | [Installation](docs/INSTALLATION.md) | [Beta testen und Fehler melden](docs/TESTEN.md) |
-| [Benutzerhandbuch (20 Kapitel)](docs/BENUTZERHANDBUCH.md) | [Versionsgeschichte / Changelog](CHANGELOG.md) |
+| [Benutzerhandbuch (20 Kapitel)](docs/BENUTZERHANDBUCH.md) | [Versionen & Changelog](docs/VERSIONEN.md) · [Vollständiges Archiv](CHANGELOG.md) |
 | [FAQ](docs/FAQ.md) | [Roadmap StrainDB](docs/ROADMAP_STRAINDB.md) |
 | [Updates und Versionswechsel](docs/UPDATES.md) | [Release- und Update-Verfahren](docs/RELEASE_PROZESS.md) |
 | [Datenverarbeitung](docs/DATENSCHUTZ.md) | [Prüfsummen und APK-Integrität](docs/INTEGRITAET.md) |
