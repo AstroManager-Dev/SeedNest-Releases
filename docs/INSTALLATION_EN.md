@@ -4,7 +4,7 @@
 
 SeedNest requires **Android 8 or newer**.
 
-1. Open the official [Releases page](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) and download the APK for the version you want to install.
+1. Use the [permanent latest APK download link](https://astromanager-dev.github.io/SeedNest-Releases/download/) for the currently approved version. Alternatively, choose any published version on the [official Releases page](https://github.com/AstroManager-Dev/SeedNest-Releases/releases).
 2. If you already have a collection, first save a complete backup **outside the app's private storage**.
 3. Open the APK. Android may require you to allow installations from the browser or file manager used for the download.
 4. **Update SeedNest over the existing installation. Do not uninstall the previous version first.**
