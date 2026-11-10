@@ -1,81 +1,86 @@
-# SeedNest – Android-Testversionen
+# SeedNest
+### Deine Sammlung. Verwurzelt.
 
-**Sprache / Language:** **🇩🇪 Deutsch** | [🇬🇧 English](README_EN.md)
+**Native Android-App zur Verwaltung privater Cannabis-Samensammlungen** – Sorten dokumentieren, Samenbestände organisieren, Lagerplätze zuordnen und Etiketten drucken.
 
-![Status: Alpha](https://img.shields.io/badge/Status-Alpha-orange)
-![Android: 8+](https://img.shields.io/badge/Android-8%2B-green)
+[![Projektstatus: Alpha](https://img.shields.io/badge/Status-öffentliche%20Alpha-F59E0B?style=flat-square)](https://github.com/AstroManager-Dev/SeedNest-Releases/releases)
+[![Android 8+](https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](docs/INSTALLATION.md)
+[![Downloads](https://img.shields.io/github/downloads/AstroManager-Dev/SeedNest-Releases/total?style=flat-square&label=APK-Downloads)](https://github.com/AstroManager-Dev/SeedNest-Releases/releases)
+[![Rückmeldungen](https://img.shields.io/github/issues/AstroManager-Dev/SeedNest-Releases?style=flat-square&label=Feedback)](https://github.com/AstroManager-Dev/SeedNest-Releases/issues)
 
-**[APK herunterladen](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) · [Installation](docs/INSTALLATION.md) · [Benutzerhandbuch](docs/BENUTZERHANDBUCH.md) · [Testanleitung](docs/TESTEN.md) · [Changelog](CHANGELOG.md) · [Feedback](https://github.com/AstroManager-Dev/SeedNest-Releases/issues/new/choose)**
+**🇩🇪 Deutsch** · [🇬🇧 English](README_EN.md)
 
-SeedNest verwaltet Sorten, Samenbestände, Behälter und Lagerplätze. Dazu kommen Verpackungsscan, Rechnungsimport, Einkaufslisten, Run-Planung und optionale Gemini-Recherche.
+---
+
+## Download und Einstieg
+
+| | |
+|---|---|
+| **Android-App herunterladen** | **[Aktuelle APK direkt herunterladen](https://astromanager-dev.github.io/SeedNest-Releases/download/)** · [Alle Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) |
+| **Zuletzt geprüfte Veröffentlichung** | [Alpha.0.5.007](https://github.com/AstroManager-Dev/SeedNest-Releases/releases/tag/Alpha.0.5.007) · Android 8+ · Alpha-Testversion |
+| **Neueste Versionsdaten** | [latest.json](latest.json) · Von der SeedNest-Updatefunktion verwendet |
+| **Vor dem Installieren** | [Installationsanleitung](docs/INSTALLATION.md) · [Prüfsummen & sichere Updates](docs/INTEGRITAET.md) |
+
+> [!IMPORTANT]
+> **Vor jedem Update eine vollständige Sicherung außerhalb der App anlegen.** Neue APK **über die vorhandene Installation** installieren – **SeedNest nicht vorher deinstallieren**. So bleiben lokale Sammlungsdaten erhalten. Bei Signatur- oder Paketkonflikten die Installation abbrechen und ein Problem melden, statt Daten durch Deinstallation zu riskieren.
+
+**Schnellstart:** ① APK unter **Releases** auswählen und herunterladen. ② Android-Installation bestätigen. ③ Sammlung und Lagerorte einrichten. ④ Vor größeren Tests ein externes Backup erstellen.  
+[Installation Schritt für Schritt](docs/INSTALLATION.md) · [Beta-Testleitfaden](docs/TESTEN.md)
+
+## Was SeedNest heute kann
 
 | Bereich | Funktionen |
-| --- | --- |
-| Sammlung | Sorten, Breeder, Auto/Photo, Favoriten, Suche und unterschiedliche Ansichten |
-| Angaben | Genetik, THC/CBD, Indica/Sativa/Ruderalis, Blütezeit, Ertrag und Quellen |
-| Bestand | Behälter, Mengen, Zu-/Abgänge, Verlauf und grafische Taschenplätze |
-| Erfassung | Verpackungsfoto, Bildauswahl und Rechnungsimport mit Vorschau |
-| Planung | Einkaufsliste, Next Run und aktueller Run mit bestätigtem Start |
-| Recherche | Optional Gemini mit eigenem Schlüssel, Quellenprüfung und Übersetzung |
-| PDF & Druck | Taschenplan, 60 × 30-mm-Dosenetiketten, eigene Größen, Vorschau und gezielter Neudruck |
-| Sicherung | ZIP-Backup, optional verschlüsselte Sicherung und Wiederherstellungsvorschau |
+|---|---|
+| **Sortenkatalog** | Breeder, Genetik, Auto/Photo, THC/CBD, Aroma, Favoriten, Suche und Quellen |
+| **Bestand und Lagerung** | Samenmengen, Bewegungen, Behälter, hierarchische Lagerorte und visuelle Taschenraster |
+| **QR & Barcode** | QR-Etiketten für Lagerung und Behälter; Code 128 für passende Dosenetiketten |
+| **PDF und Druck** | Taschenpläne, Dosenetiketten, frei wählbare Größen, PDF-Vorschau und gezielter Neudruck |
+| **Planung** | Einkaufsliste, „Next Run“ und bestätigte Bestandsbuchungen beim aktuellen Run |
+| **Erfassung und Recherche** | Verpackungsfotos, lokaler OCR-/Rechnungsimport und optionale Gemini-Recherche mit eigenem Schlüssel |
+| **Datenschutz und Sicherung** | Lokal gespeicherte Sammlungsdaten, ZIP-Backups und optional verschlüsselte Sicherungen |
+| **Aktualisierungen** | In-App-Updateprüfung, signatur- und prüfsummenbasierte APK-Prüfung sowie Offline-Changelog |
 
-**Alpha-Fehlerregel:** Wenn ein Problem auftritt, **zuerst nach einer neueren APK unter [Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) oder in der App unter Mehr → Updates suchen**. Vor dem Update sichern, über die bestehende App installieren, Fehler erneut prüfen und erst dann melden. Bei Startproblemen die Releases im Browser prüfen; nicht vorschnell deinstallieren.
+**Einordnung:** SeedNest befindet sich in einer **Alpha-Phase**. Scans, Druckausgaben, lokale KI und gerätespezifisches Verhalten erfordern weitere Praxistests. Ergebnisse aus OCR oder KI immer vor dem Speichern prüfen.
 
-**Experimenteller Status:** Rechnungs-Scan/OCR und lokale KI befinden sich weiterhin in Erprobung. Erfasste Positionen und KI-Vorschläge vor jeder Übernahme kontrollieren.
+## Projektstatus und Ausblick
+
+| Bereits in der veröffentlichten App | Noch geplant / in Entwicklung |
+|---|---|
+| Lokale Offline-Sammlung und Bestandsverwaltung | Zentraler, lizenzierter StrainDB-Katalog |
+| QR-Codes, Code-128-Dosenetiketten und PDF-Druck | Erweiterte Produkt-/EAN-Verknüpfung mit externem Katalog |
+| Optionale Recherche, Backup und Updatefunktion | Google-Accounts, Pro-/Contributor-Rollen und integrierter Admin-/Owner-Bereich |
+
+**Wichtig:** StrainDB, Cloud-Benutzerrollen und zusätzliche GitHub-Owner-Verifizierung sind **nicht Teil der veröffentlichten APK**. Öffentliche Herstellerdaten werden nur im zulässigen Rechteumfang integriert. Siehe [StrainDB-Roadmap](docs/ROADMAP_STRAINDB.md).
 
 ## Dokumentation
 
-- [**Benutzerhandbuch (20 Kapitel)**](docs/BENUTZERHANDBUCH.md)
-- [**Roadmap: Zentrale StrainDB, EAN-Scanner und Bezugsquellen**](docs/ROADMAP_STRAINDB.md)
-- [Installation](docs/INSTALLATION.md)
-- [Updates und Veröffentlichungsablauf](docs/UPDATES.md)
-- [Kurze Anleitung für Tester](docs/TESTEN.md)
-- [Häufige Fragen](docs/FAQ.md)
-- [Datenverarbeitung](docs/DATENSCHUTZ.md)
-- [Feedback und Mitwirkung](CONTRIBUTING.md)
+| Für Nutzerinnen und Nutzer | Für Tester und Interessierte |
+|---|---|
+| [Installation](docs/INSTALLATION.md) | [Beta testen und Fehler melden](docs/TESTEN.md) |
+| [Benutzerhandbuch (20 Kapitel)](docs/BENUTZERHANDBUCH.md) | [Versionen & Changelog](docs/VERSIONEN.md) · [Vollständiges Archiv](CHANGELOG.md) |
+| [FAQ](docs/FAQ.md) | [Roadmap StrainDB](docs/ROADMAP_STRAINDB.md) |
+| [Updates und Versionswechsel](docs/UPDATES.md) | [Release- und Update-Verfahren](docs/RELEASE_PROZESS.md) |
+| [Datenverarbeitung](docs/DATENSCHUTZ.md) | [Prüfsummen und APK-Integrität](docs/INTEGRITAET.md) |
 
-## Installation und Updates
+## Probleme melden oder Ideen einbringen
 
-Die aktuelle APK findest du unter [Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases). Auf einem vorhandenen SeedNest als Update installieren, **nicht vorher deinstallieren**. Vor Tests mit wichtigen Daten eine vollständige Sicherung außerhalb der App aufbewahren.
+**Zuerst neuere Version prüfen**, dann den Fehler nach einem Backup und Update erneut testen. Rückmeldungen sind willkommen:
 
-Ab Alpha.0.5.001 informiert die App beim ersten Start über die Updatefunktion. Optional prüft sie beim Start einmal täglich nach neuen Versionen. Unter **Mehr → Updates & Changelog** kannst du jederzeit manuell prüfen, die automatische Prüfung ändern und die Änderungshistorie offline lesen.
+**[Fehler melden](https://github.com/AstroManager-Dev/SeedNest-Releases/issues/new/choose)** · [Offene Rückmeldungen](https://github.com/AstroManager-Dev/SeedNest-Releases/issues) · [Hinweise zur Mitwirkung](CONTRIBUTING.md)
 
-Download und Installation werden bewusst gestartet; Android verlangt eine Bestätigung und gegebenenfalls die Freigabe zur Installation aus dieser Quelle. Prüfsumme, App-Kennung, höhere Versionsnummer und Signatur werden vor dem Installationsaufruf kontrolliert. Bei der Prüfung werden keine Bestände, Bilder oder API-Schlüssel hochgeladen. GitHub erhält die üblichen Verbindungsdaten.
+Hilfreich sind **App-Version, Android-Version, Gerätemodell, reproduzierbare Schritte sowie erwartetes/tatsächliches Ergebnis**. Issues sind öffentlich: **keine privaten Bestandsdateien, API-Schlüssel, Keystores, ungeschwärzten Rechnungen oder personenbezogenen Daten veröffentlichen**. Alternativ gibt es in der App unter **Mehr → Fehler per E-Mail melden** eine freiwillige E-Mail-Meldung.
 
-Android 8 oder neuer. Die Alpha-Version dient zum Testen; Kamera, Erkennungsqualität und Hintergrundverhalten können sich je nach Gerät unterscheiden. KI- und Scan-Vorschläge vor Übernahme prüfen.
+## Offizielle Veröffentlichungen und Projektorganisation
 
-## Änderungen und Rückmeldungen
+- **Dieses öffentliche Repository:** signierte APK-Releases, Prüfsummen, `latest.json`, Dokumentation, Tester-Feedback und [Downloadstatistiken](stats/).
+- **Quellcode:** wird getrennt entwickelt und ist nicht Bestandteil dieser öffentlichen Veröffentlichung. Das Bereitstellen einer APK stellt den Quellcode nicht automatisch unter eine Open-Source-Lizenz.
+- **Update-Sicherheit:** Release-APK und SHA256SUMS müssen zuerst veröffentlicht und verifiziert werden; danach darf `latest.json` auf die neue Version zeigen. Signaturschlüssel und Server-Secrets gehören nicht in dieses Repository.
+- **Keine Anmeldung für Downloads erforderlich.** Die bestehende lokale App-Sammlung erfordert ebenfalls kein SeedNest-Konto.
 
-- [Rückwirkender Changelog](CHANGELOG.md)
-- [Fehler oder Verbesserungsvorschlag melden](https://github.com/AstroManager-Dev/SeedNest-Releases/issues)
+## SeedNest unterstützen
 
-Bei Fehlern bitte App-Version, Handymodell, Android-Version, Schritte und erwartetes/tatsächliches Ergebnis nennen. API-Schlüssel, private Bestandsbackups und ungeschwärzte Rechnungen gehören nicht in öffentliche Issues.
+Die Entwicklung kann [**freiwillig über PayPal unterstützt werden**](https://paypal.me/Mmbaby2016). Höhe und Durchführung der Zahlung werden ausschließlich bei PayPal festgelegt; SeedNest verarbeitet keine Zahlungsdaten.
 
-Dieses Repository dient der Veröffentlichung von Downloads, Versionsinformationen und Anleitungen. Die öffentliche Updateinformation liegt in `latest.json`. Ein GitHub-Konto ist für Download und Updateprüfung nicht erforderlich.
+---
 
-## SeedNest freiwillig unterstützen
-
-Wenn dir SeedNest gefällt, kannst du die Weiterentwicklung mit einem freiwilligen Beitrag unterstützen. Den Betrag bestimmst du selbst.
-
-**[Mit PayPal unterstützen ❤️](https://paypal.me/Mmbaby2016)**
-
-Der Link öffnet die externe PayPal-Seite. Ab Alpha.0.5.004 findest du ihn auch in der App unter **Mehr → SeedNest unterstützen**. Die Entscheidung über eine Zahlung erfolgt auf PayPal; SeedNest verarbeitet keine Zahlungsdaten.
-
-## Neu in Alpha.0.5.006
-
-PDF-Schrift mit nativen Grafiktests abgesichert. Vor dem Speichern kannst du die PDF in SeedNest mit Seitenwechsel und Zoom prüfen. Dateinamen enthalten Tasche, Datum, Uhrzeit und eine eindeutige Kennung.
-
-Unter Lager → Tasche → PDF & Drucken lassen sich alle, nur neue/geänderte/vorgemerkte oder nur vorgemerkte Etiketten auswählen. In der einzelnen Sorte oder Dose kannst du einen Neudruck vormerken. Nach dem tatsächlichen Druck **alle Etiketten dieses Auftrags ausdrücklich bestätigen**. Bei Vorschau, Export, Abbruch oder nur teilweise gedruckten Seiten nicht bestätigen. Druckstatus bleibt lokal auf diesem Gerät und ist nicht Teil der Bestands-Sicherung.
-
-Updates versuchen vorübergehende Verbindungsfehler bis zu dreimal erneut; ein Browser-Link dient als Ausweichweg. Bei HTTP 504 in älteren App-Versionen den APK-Link im Browser mit `?download=1` öffnen und über die bestehende App installieren.
-
-Unter **Mehr → Fehler per E-Mail melden** ist kein GitHub-Konto nötig. Bericht und freiwilligen Diagnoseanhang vorher prüfen; anschließend selbst in der E-Mail-App an **m.nause79@gmail.com** versenden. Ohne Mail-App kannst du den Bericht kopieren.
-
-## Neu in Alpha.0.5.007
-
-Behälternummern sind fest: neue Nummern werden automatisch vergeben, vorhandene bleiben erhalten und lassen sich nicht mehr ändern. Umräumen ändert die Nummer nicht. Der Nummernzähler bleibt beim Löschen erhalten. Bei einer Wiederherstellung werden abweichende Nummern derselben Behälter-ID abgewiesen; der höhere Zähler bleibt erhalten.
-
-Für normales Papier innen in kleinen Dosen gibt es unter **PDF & Drucken → Dosenetiketten → Code auf Dosenetiketten** den längs angeordneten **Code-128-Strichcode**. Die Striche liegen quer zur Dose. QR bleibt auswählbar und alte QR-Etiketten funktionieren weiter. Zu lange oder ungeeignete Alt-Nummern erhalten automatisch QR.
-
-Nach dem Update einen neuen Etikettenbogen erstellen. Der Scanner erkennt beide Formate; bei Strichcodes bei Bedarf das Handy drehen. Reflexionen durch leichtes Drehen der Dose verschieben. Erst einen Probeausdruck auf normalem Papier in der echten Dose testen: Grafiktests können Rundung, Kamera und Plastik nicht vollständig nachbilden.
+<sub>SeedNest ist eine unabhängige Android-Testanwendung zur Sammlungsorganisation. Dieses Repository dient Downloads, Dokumentation und Feedback. Für die Nutzung sind die örtlich geltenden Rechtsvorschriften zu beachten.</sub>

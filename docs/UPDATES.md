@@ -14,6 +14,14 @@ Beim ersten Start erscheint einmalig ein Hinweis, in dem die automatische Prüfu
 
 Offline funktioniert die Bestandsverwaltung weiterhin. Ein Downloadabbruch oder eine Prozessbeendigung kann erneutes Herunterladen erforderlich machen. Die App installiert keine Updates stillschweigend.
 
+## Dauerhafter Download-Link
+
+Für Beta-Tester und externe Webseiten gibt es zusätzlich einen **gleichbleibenden Download-Link**:
+
+**[Aktuell freigegebene SeedNest-APK](https://astromanager-dev.github.io/SeedNest-Releases/download/)**
+
+Der Link öffnet eine kleine GitHub-Pages-Seite, die eine bei Veröffentlichung aus `latest.json` übernommene Kopie überprüft und auf die **zugehörige offizielle APK** weiterleitet. Das funktioniert auch für als Prerelease markierte Alpha-Versionen, anders als GitHubs normale `/releases/latest`-Funktion. Sobald der Release-Feed nach erfolgreicher Publikation aktualisiert wird, veröffentlicht der Pages-Workflow ebenfalls den neuen Stand. Bei einer Störung führt der Link zur [Releases-Übersicht](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) weiter. Zum Testen ohne automatische Weiterleitung `?manual=1` ergänzen.
+
 ## Release-Ablauf
 
 1. Android-versionCode erhöhen und Versionsname setzen; mit dem bisherigen Zertifikat signieren.

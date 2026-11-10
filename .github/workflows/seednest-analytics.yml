@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'stats/**'
+      - 'latest.json'  # Update the fixed APK download URL after a verified new release
       - '.github/workflows/seednest-analytics.yml'
 
 permissions:
@@ -53,6 +54,11 @@ jobs:
           else
             echo "Kein neuer Tagesstand."
           fi
+
+      - name: Aktuelle Release-Metadaten in Pages spiegeln
+        run: |
+          python3 scripts/check_latest.py
+          cp latest.json stats/latest.json
 
       - name: GitHub Pages konfigurieren
         uses: actions/configure-pages@v5

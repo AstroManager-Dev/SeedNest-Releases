@@ -1,0 +1,60 @@
+name: Release portal validation
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'README_EN.md'
+      - 'docs/**'
+      - 'stats/download/**'
+      - 'latest.json'
+      - 'scripts/check_latest.py'
+      - '.github/workflows/verify-release-hub.yml'
+      - '.github/workflows/seednest-analytics.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'README_EN.md'
+      - 'docs/**'
+      - 'stats/download/**'
+      - 'latest.json'
+      - 'scripts/check_latest.py'
+      - '.github/workflows/verify-release-hub.yml'
+      - '.github/workflows/seednest-analytics.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate public download and version metadata
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Validate latest.json schema and trusted APK URL
+        run: python3 scripts/check_latest.py
+      - name: Check permanent download route and separate changelog
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          home = Path("README.md").read_text(encoding="utf-8")
+          english = Path("README_EN.md").read_text(encoding="utf-8")
+          page = Path("stats/download/index.html").read_text(encoding="utf-8")
+          workflow = Path(".github/workflows/seednest-analytics.yml").read_text(encoding="utf-8")
+          url = "https://astromanager-dev.github.io/SeedNest-Releases/download/"
+          assert url in home and url in english, "Stable link missing from a landing page"
+          assert "docs/VERSIONEN.md" in home, "Separate German version history missing"
+          assert "docs/VERSIONS_EN.md" in english, "Separate English version history missing"
+          assert Path("docs/VERSIONEN.md").exists() and Path("docs/VERSIONS_EN.md").exists()
+          assert 'fetch("../latest.json"' in page, "Download page must use the manifest snapshot"
+          assert "data.apkUrl !== expected" in page, "Untrusted download URL validation removed"
+          assert "window.location.replace(expected)" in page, "Permanent link must redirect"
+          assert "cp latest.json stats/latest.json" in workflow, "Pages manifest copy missing"
+          assert "'latest.json'" in workflow, "Pages must redeploy on update manifest changes"
+          print("Public portal, redirect route and changelog navigation look consistent")
+          PY
