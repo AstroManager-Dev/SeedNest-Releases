@@ -3,7 +3,7 @@
 **A dedicated area for version history, release notes and downloads**  
 **Language / Sprache:** [🇩🇪 Deutsch](VERSIONEN.md) | **🇬🇧 English**
 
-[← Project overview](../README_EN.md) · [All downloads](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) · [Complete changelog (German)](../CHANGELOG.md)
+[← Project overview](../README_EN.md) · [Download latest APK](https://astromanager-dev.github.io/SeedNest-Releases/download/) · [All downloads](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) · [Complete changelog (German)](../CHANGELOG.md)
 
 ---
 
