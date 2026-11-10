@@ -16,7 +16,7 @@
 
 | | |
 |---|---|
-| **Download the Android app** | **[Official GitHub Releases – APK & SHA-256](https://github.com/AstroManager-Dev/SeedNest-Releases/releases)** |
+| **Download the Android app** | **[Download the latest APK](https://astromanager-dev.github.io/SeedNest-Releases/download/)** · [All releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) |
 | **Last verified published build** | [Alpha.0.5.007](https://github.com/AstroManager-Dev/SeedNest-Releases/releases/tag/Alpha.0.5.007) · Android 8+ · Alpha |
 | **Current update manifest** | [latest.json](latest.json) · Consumed by the in-app updater |
 | **Before installing** | [Installation guide](docs/INSTALLATION_EN.md) · [Checksums and integrity](docs/INTEGRITAET.md) (German) |
@@ -57,7 +57,7 @@
 | For users | For testers and contributors |
 |---|---|
 | [Installation (English)](docs/INSTALLATION_EN.md) | [Beta testing (English)](docs/TESTEN_EN.md) |
-| [User manual – 20 chapters (German)](docs/BENUTZERHANDBUCH.md) | [Changelog (German)](CHANGELOG.md) |
+| [User manual – 20 chapters (German)](docs/BENUTZERHANDBUCH.md) | [Versions & Changelog](docs/VERSIONS_EN.md) · [Full German archive](CHANGELOG.md) |
 | [FAQ (German)](docs/FAQ.md) | [StrainDB roadmap (English)](docs/ROADMAP_STRAINDB_EN.md) |
 | [App updates (German)](docs/UPDATES.md) | [Release process (English)](docs/RELEASE_PROCESS_EN.md) |
 | [Data processing (German)](docs/DATENSCHUTZ.md) | [Checksums and APK integrity (English)](docs/INTEGRITY_EN.md) |
