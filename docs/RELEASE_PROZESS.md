@@ -23,6 +23,7 @@ Dieses öffentliche Repository enthält APK-Dateien, Prüfsummen, das Versionsma
 5. Erst **nach dem verifizierten GitHub Release** die Stammdatei `latest.json` auf den neuen Tag umstellen. Die bereits installierte App liest dieses Format; **Schema und Schlüsselnamen nicht ändern**.
 6. Den öffentlichen Feed laden, die Download-URL aufrufen und die Hash-/Größenangaben erneut mit der veröffentlichten APK abgleichen.
 7. Release, Update-Feed, Dokumentationslinks und Downloadstatistik prüfen.
+8. GitHub-Pages-Workflow für das neue Manifest abwarten und [dauerhaften Download-Link](https://astromanager-dev.github.io/SeedNest-Releases/download/) (mit `?manual=1` ohne Weiterleitung) auf korrekten Versionstag und Dateigröße prüfen. Bei fehlgeschlagener Pages-Bereitstellung bleibt der bisherige Direktlink zur Release-Seite der Ausweichweg.
 
 ### Vertrag für `latest.json` (Schema 1)
 
@@ -57,7 +58,7 @@ Das Manifest ist **kein Werbetext**, sondern ein sicherheitsrelevanter Vertrag m
 | [GitHub Releases](https://github.com/AstroManager-Dev/SeedNest-Releases/releases) | Signierte APKs, SHA-256-Dateien und eigentliche Release Notes |
 | [latest.json](../latest.json) | Maschinenlesbarer Android-Update-Feed |
 | [docs/](.) | Installation, Datenschutz, Testen, FAQ und Integrität |
-| [stats/](../stats/) | Downloadstatistik; Abrufe sind keine eindeutigen Installationen oder Personen |
+| [stats/](../stats/) | Downloadstatistik und statische Weiterleitung `download/` zur freigegebenen APK; Abrufe sind keine eindeutigen Installationen oder Personen |
 | [SECURITY.md](../SECURITY.md) | Verfahren für Sicherheitsmeldungen |
 
 **Hinweis:** Der bestehende Workflow für die Download-Statistik bleibt unverändert. Die Publikation einer signierten APK wird durch die Dokumentationsmodernisierung nicht automatisiert.
