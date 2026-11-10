@@ -1,73 +1,53 @@
-name: SeedNest Download Dashboard
+name: SeedNest Website (GitHub Pages)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '23 5 * * *'  # taeglich 05:23 UTC (kann sich verzoegern)
   push:
     branches: [main]
     paths:
       - 'stats/**'
-      - 'latest.json'  # Update the fixed APK download URL after a verified new release
+      - 'latest.json'
       - '.github/workflows/seednest-analytics.yml'
+      - 'scripts/check_latest.py'
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: seednest-analytics-pages
+  group: seednest-public-pages
   cancel-in-progress: false
 
 jobs:
-  collect-and-deploy:
-    name: Downloads speichern und GitHub Pages aktualisieren
-    runs-on: ubuntu-latest
+  deploy:
+    name: Branded website and stable APK download
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Repository abrufen
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          persist-credentials: true
-
-      - name: Python einrichten
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Downloadzaehler erfassen
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 stats/collect.py
-
-      - name: Tageshistorie speichern
+          persist-credentials: false
+      - name: Validate current released APK metadata
+        run: python3 scripts/check_latest.py
+      - name: Include approved version manifest in static site
+        run: cp latest.json stats/latest.json
+      - name: Assert no public analytics history is published
         run: |
-          if ! git diff --quiet -- stats/data/history.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add stats/data/history.json
-            git commit -m "stats: save daily APK download snapshot [skip ci]"
-            git push
-          else
-            echo "Kein neuer Tagesstand."
-          fi
-
-      - name: Aktuelle Release-Metadaten in Pages spiegeln
-        run: |
-          python3 scripts/check_latest.py
-          cp latest.json stats/latest.json
-
-      - name: GitHub Pages konfigurieren
+          test -f stats/index.html
+          test -f stats/admin/index.html
+          test -f stats/changelog/index.html
+          test -f stats/download/index.html
+          test ! -e stats/data/history.json
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
-      - name: Website-Paket erstellen
+      - name: Build static site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: stats
-
-      - name: Dashboard veroeffentlichen
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
