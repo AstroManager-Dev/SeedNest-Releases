@@ -54,7 +54,7 @@
         || !Number.isSafeInteger(data.versionCode) || data.versionCode <= 0
         || !Number.isSafeInteger(data.size) || data.size <= 0
         || typeof data.versionName !== "string" || data.versionName !== data.tag
-        || !/^Alpha\.[0-9]+\.[0-9]+\.[0-9]+$/.test(data.tag)
+        || !/^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/.test(data.tag)
         || typeof data.sha256 !== "string" || !/^[a-f0-9]{64}$/i.test(data.sha256)) {
         throw new Error("Versionsdatei ungültig");
       }
