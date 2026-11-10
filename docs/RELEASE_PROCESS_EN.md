@@ -23,6 +23,7 @@ This public repository hosts APKs, checksums, the `latest.json` update manifest 
 5. **Only after** the release assets are available and verified, update the root `latest.json`. **Do not change its existing schema or field names.**
 6. Fetch the public manifest and asset; compare its hash and size to the signed APK.
 7. Check release links, documentation and download statistics.
+8. Wait for the GitHub Pages deployment and test the [permanent current APK link](https://astromanager-dev.github.io/SeedNest-Releases/download/) with `?manual=1`. Check the exact version tag, file size and target URL; use the normal Releases page if Pages is unavailable.
 
 ## Current update manifest: schema 1
 
