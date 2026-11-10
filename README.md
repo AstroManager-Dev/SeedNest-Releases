@@ -1,4 +1,4 @@
-# SeedNest – Deine Sammlung. Verwurzelt.
+# SeedNest – Deine Sammlung. Alles im Blick.
 
 **Die offizielle SeedNest-Website ist ab sofort der zentrale Einstieg für Informationen, Download und Versionsgeschichte.**
 

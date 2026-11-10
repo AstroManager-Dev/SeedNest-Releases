@@ -1,4 +1,4 @@
-# SeedNest – Your collection. Rooted.
+# SeedNest – Your collection. All in one place.
 
 **The official SeedNest website is the new home for downloads, features, updates and documentation.**
 
