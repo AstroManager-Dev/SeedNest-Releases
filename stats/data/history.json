@@ -40,5 +40,47 @@
         "count": 2
       }
     ]
+  },
+  {
+    "date": "2026-11-10",
+    "collected_at": "2026-11-10T13:37:32Z",
+    "total": 29,
+    "releases": [
+      {
+        "tag": "Alpha.0.5.007",
+        "published": "2026-11-09T08:46:43Z",
+        "count": 5
+      },
+      {
+        "tag": "Alpha.0.5.006",
+        "published": "2026-11-09T07:19:00Z",
+        "count": 6
+      },
+      {
+        "tag": "Alpha.0.5.005",
+        "published": "2026-11-09T06:14:32Z",
+        "count": 7
+      },
+      {
+        "tag": "Alpha.0.5.004",
+        "published": "2026-11-09T00:52:23Z",
+        "count": 2
+      },
+      {
+        "tag": "Alpha.0.5.003",
+        "published": "2026-11-08T22:15:39Z",
+        "count": 3
+      },
+      {
+        "tag": "Alpha.0.5.002",
+        "published": "2026-11-08T21:31:34Z",
+        "count": 4
+      },
+      {
+        "tag": "Alpha.0.5.001",
+        "published": "2026-11-08T21:23:19Z",
+        "count": 2
+      }
+    ]
   }
 ]
