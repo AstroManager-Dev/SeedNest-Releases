@@ -6,22 +6,20 @@ on:
       - 'README.md'
       - 'README_EN.md'
       - 'docs/**'
-      - 'stats/download/**'
+      - 'stats/**'
       - 'latest.json'
       - 'scripts/check_latest.py'
-      - '.github/workflows/verify-release-hub.yml'
-      - '.github/workflows/seednest-analytics.yml'
+      - '.github/workflows/**'
   push:
     branches: [main]
     paths:
       - 'README.md'
       - 'README_EN.md'
       - 'docs/**'
-      - 'stats/download/**'
+      - 'stats/**'
       - 'latest.json'
       - 'scripts/check_latest.py'
-      - '.github/workflows/verify-release-hub.yml'
-      - '.github/workflows/seednest-analytics.yml'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:
@@ -29,32 +27,47 @@ permissions:
 
 jobs:
   validate:
-    name: Validate public download and version metadata
+    name: Validate website, update compatibility and auth guard
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - name: Validate latest.json schema and trusted APK URL
+      - name: Validate existing schema-1 manifest
         run: python3 scripts/check_latest.py
-      - name: Check permanent download route and separate changelog
+      - name: Check JavaScript syntax
+        run: |
+          for file in stats/assets/*.js stats/changelog/*.js stats/admin/*.js; do node --check "$file"; done
+      - name: Inspect website links, independent changelog and admin protection
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          home = Path("README.md").read_text(encoding="utf-8")
-          english = Path("README_EN.md").read_text(encoding="utf-8")
-          page = Path("stats/download/index.html").read_text(encoding="utf-8")
-          workflow = Path(".github/workflows/seednest-analytics.yml").read_text(encoding="utf-8")
-          url = "https://astromanager-dev.github.io/SeedNest-Releases/download/"
-          assert url in home and url in english, "Stable link missing from a landing page"
-          assert "docs/VERSIONEN.md" in home, "Separate German version history missing"
-          assert "docs/VERSIONS_EN.md" in english, "Separate English version history missing"
-          assert Path("docs/VERSIONEN.md").exists() and Path("docs/VERSIONS_EN.md").exists()
-          assert 'fetch("../latest.json"' in page, "Download page must use the manifest snapshot"
-          assert "data.apkUrl !== expected" in page, "Untrusted download URL validation removed"
-          assert "window.location.replace(expected)" in page, "Permanent link must redirect"
-          assert "cp latest.json stats/latest.json" in workflow, "Pages manifest copy missing"
-          assert "'latest.json'" in workflow, "Pages must redeploy on update manifest changes"
-          print("Public portal, redirect route and changelog navigation look consistent")
+          from html.parser import HTMLParser
+          class Parser(HTMLParser):
+              def __init__(self): super().__init__();self.links=[]
+              def handle_starttag(self,tag,attrs):
+                  if tag in ('a','link','script'):
+                      vals=dict(attrs)
+                      if vals.get('href') or vals.get('src'): self.links.append(vals.get('href') or vals.get('src'))
+          root=Path('stats')
+          for path in ['index.html','admin/index.html','changelog/index.html','download/index.html']:
+              p=Parser();p.feed((root/path).read_text(encoding='utf-8'))
+              assert p.links, f'No navigation in {path}'
+          home=(root/'index.html').read_text(encoding='utf-8')
+          admin=(root/'admin/admin.js').read_text(encoding='utf-8')
+          versions=(root/'changelog/index.html').read_text(encoding='utf-8')
+          workflow=Path('.github/workflows/seednest-analytics.yml').read_text(encoding='utf-8')
+          assert 'assets/site.css' in home and 'id="download-primary"' in home
+          assert 'changelog/' in home and 'download/' in home
+          assert 'Release Notes' in versions
+          assert 'code_challenge_method' in admin and 'pkce' in admin
+          assert 'seednest-release-analytics' in admin
+          assert 'Authorization' in admin and 'PUBLIC_KEY' in admin
+          assert 'stats/data/history.json' in workflow and 'test ! -e' in workflow
+          assert not (root/'data/history.json').exists(), 'Public history must not be published'
+          assert 'cp latest.json stats/latest.json' in workflow
+          assert 'scripts/check_latest.py' in workflow
+          assert (root/'assets/favicon.svg').exists()
+          print('Branded website, changelog, authentication and private history boundary checked')
           PY
