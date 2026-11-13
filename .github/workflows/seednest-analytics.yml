@@ -33,8 +33,11 @@ jobs:
           persist-credentials: false
       - name: Validate current released APK metadata
         run: python3 scripts/check_latest.py
-      - name: Include approved version manifest in static site
-        run: cp latest.json stats/latest.json
+      - name: Render approved release metadata into all website pages
+        run: |
+          python3 scripts/render_release_site.py
+          test -f stats/latest.json
+          # cp latest.json stats/latest.json is performed by the validated renderer
       - name: Assert no public analytics history is published
         run: |
           test -f stats/index.html

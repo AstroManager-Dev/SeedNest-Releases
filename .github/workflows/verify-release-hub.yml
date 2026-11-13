@@ -36,6 +36,8 @@ jobs:
           persist-credentials: false
       - name: Validate existing schema-1 manifest
         run: python3 scripts/check_latest.py
+      - name: Verify release website generation
+        run: python3 -m unittest discover -s scripts -p test_*.py -v
       - name: Check JavaScript syntax
         run: |
           for file in stats/assets/*.js stats/changelog/*.js stats/admin/*.js; do node --check "$file"; done
