@@ -1,3 +1,11 @@
+## Alpha.0.5.009 · 13.11.2026
+
+- Rechnungsimport über KI mit Händler-Artikelnummern-Abgleich und überprüfbaren Händlerquellen integriert. Ergebnisse vor Übernahme kontrollieren.
+- Aktueller zusammengeführter Quellstand mit Preview-Oberflächenkomponenten; korrigierte Build-Zuordnung zur Haupt-App.
+- Versionscode 49: Update für die Haupt-App einschließlich der privat verteilten Codes 47 und 48. Paketkennung und Originalsignatur unverändert.
+
+- Geräteprüfung der gemeldeten Preview-Abweichung bleibt offen; kein verifizierter Fix behauptet.
+
 ## Alpha.0.5.007 · 09.11.2026
 
 - Behälternummern automatisch fest vergeben, im Formular schreibgeschützt und zusätzlich in Datenlogik und Speicherung gegen Änderungen gesichert. Bestehende Nummern bleiben unverändert.

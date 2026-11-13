@@ -7,6 +7,11 @@
 
 ---
 
+## Alpha.0.5.009 · 13.11.2026
+
+[Release / APK und SHA-256](https://github.com/AstroManager-Dev/SeedNest-Releases/releases/tag/Alpha.0.5.009) · versionCode 49. KI-Rechnungsimport und Händlerabgleich; aktuelle Haupt-App-Buildzuordnung. Die gemeldete Preview-Abweichung ist auf realem Gerät weiterhin ungeklärt. Details und Prüfgrenzen in den Release Notes.
+
+
 ## Latest published alpha build
 
 ### [Alpha.0.5.007 · 9 November 2026](https://github.com/AstroManager-Dev/SeedNest-Releases/releases/tag/Alpha.0.5.007)
