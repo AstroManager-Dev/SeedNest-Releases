@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "applicationId": "de.seednest.app",
-  "versionCode": 46,
-  "versionName": "Alpha.0.5.007",
-  "tag": "Alpha.0.5.007",
-  "notes": "Feste Behälternummern: automatisch vergeben, vorhandene Nummern erhalten und gegen Änderung geschützt. Fortlaufenden Zähler sichern; automatisch vergebene Nummern nach Löschen nicht erneut verwenden. Dosenetiketten für Papier innen mit längs angeordnetem Code-128-Strichcode; QR bleibt auswählbar und alte QR-Etiketten bleiben gültig. Scanner erkennt beide Formate. Nach dem Update Etiketten neu erstellen und in der Dose testen; bei Bedarf Handy oder Dose drehen. Vorher Backup sichern; nicht deinstallieren.",
-  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.007/SeedNest-Native-Alpha.0.5.007.apk",
-  "sha256": "dbc0e1c79bbad0d654b7f557e809fa988c8e3957ed8566a7f5ab7a2d08d15c07",
-  "size": 112306769
+  "versionCode": 49,
+  "versionName": "Alpha.0.5.009",
+  "tag": "Alpha.0.5.009",
+  "notes": "KI-Rechnungsimport mit Händler-Artikelnummern-Abgleich; zusammengeführter Entwicklungsstand und korrigierte Haupt-App-Buildzuordnung. Updatefähig über private Codes 47/48. Die gemeldete Preview-Abweichung ist auf echtem Gerät noch nicht abschließend geklärt. Vorher externes Backup erstellen; nicht deinstallieren.",
+  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.009/SeedNest-Native-Alpha.0.5.009.apk",
+  "sha256": "7eacec7311c69ac3cf858a1131413478eb1a8e6137aeba8eec2b98f11843b0d2",
+  "size": 104933766
 }
