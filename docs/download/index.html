@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de" data-theme="green">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#09100e">
+<title>SeedNest – aktuelle Android-APK herunterladen</title>
+<link rel="stylesheet" href="../assets/site.css"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<script defer src="../assets/site.js"></script>
+<style>
+.download-layout{min-height:calc(100vh - 155px);display:grid;place-items:center;padding:55px 0}.download-card{width:min(100%,610px);border:1px solid var(--line);border-radius:27px;background:linear-gradient(135deg,var(--surface-2),var(--surface));padding:clamp(26px,5vw,52px);box-shadow:var(--shadow)}.download-card h1{font-size:clamp(36px,6vw,55px);margin:12px 0 17px}.download-card p{font-size:14px;line-height:1.78;color:var(--muted)}.download-state{border-radius:12px;padding:17px 19px;margin:24px 0;background:var(--surface-3);border:1px solid var(--line);font-size:13px;color:var(--text)}.download-card .button{width:100%}.download-secondary{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--accent);margin-top:20px}.download-card small{display:block;color:var(--muted);line-height:1.7;font-size:11px;margin-top:25px}
+</style>
+</head>
+<body>
+<header class="header"><div class="wrap header-inner"><a class="brand" href="../"><span class="mark" aria-hidden="true">✳</span><span>SeedNest<small>APK Download</small></span></a><nav class="nav" style="display:flex;position:static;border:none;background:transparent;box-shadow:none;padding:0"><a href="../">Zur Website</a><a href="../changelog/">Versionen</a></nav></div></header>
+<main class="wrap download-layout">
+<div class="download-card">
+<span class="eyebrow">Offizielle SeedNest-Releases</span>
+<h1>Aktuelle APK.<br><span>Ein Link.</span></h1>
+<p>Diese feste Adresse ermittelt die freigegebene SeedNest-Version und führt dich zum offiziellen GitHub-APK-Download – auch bei Alpha-Prereleases.</p>
+<div id="status" class="download-state" role="status" aria-live="polite">Freigegeben: Alpha.0.5.009 · 104,9 MB · Download über GitHub</div>
+<a id="download" class="button" href="https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.009/SeedNest-Native-Alpha.0.5.009.apk">SeedNest Alpha.0.5.009 herunterladen ↗</a>
+<div class="download-secondary"><a href="../">← Zur SeedNest-Website</a><a href="https://github.com/AstroManager-Dev/SeedNest-Releases/releases">Andere Versionen</a></div>
+<small>Vorher Sammlung außerhalb der App sichern. Die neue APK über die vorhandene Installation installieren. Eine Deinstallation kann lokale Daten entfernen. <a style="text-decoration:underline" href="https://github.com/AstroManager-Dev/SeedNest-Releases/blob/main/docs/INTEGRITAET.md">Prüfsumme & Signatur nachlesen</a>.</small>
+</div>
+</main>
+<script>
+"use strict";
+(async()=>{
+ const status=document.getElementById("status"),link=document.getElementById("download");
+ const fallback="https://github.com/AstroManager-Dev/SeedNest-Releases/releases";
+ try{
+   const res=await fetch("../latest.json",{cache:"no-store"});if(!res.ok)throw Error();
+   const m=await res.json();
+   if(m.schemaVersion!==1||m.applicationId!=="de.seednest.app"||
+     !Number.isSafeInteger(m.versionCode)||m.versionCode<1||
+     !Number.isSafeInteger(m.size)||m.size<1||
+     typeof m.tag!=="string"||!/^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/.test(m.tag)||
+     m.versionName!==m.tag||typeof m.sha256!=="string"||!/^[a-f0-9]{64}$/i.test(m.sha256))throw Error();
+   const expected="https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/"+encodeURIComponent(m.tag)+"/SeedNest-Native-"+encodeURIComponent(m.tag)+".apk";
+   if(m.apkUrl!==expected)throw Error();
+   status.textContent="Freigegeben: "+m.tag+" · "+(m.size/1000000).toFixed(1).replace(".",",")+" MB · Download über GitHub";
+   link.textContent="SeedNest "+m.tag+" herunterladen ↗";link.href=expected;link.rel="noopener noreferrer";
+   if(new URLSearchParams(location.search).get("manual")!=="1"){
+     status.textContent+=" · Weiterleitung startet …";
+     location.replace(expected);
+   }
+ }catch{
+   status.textContent="Der automatische Download ist vorübergehend nicht erreichbar. Bitte die offizielle Release-Übersicht nutzen.";
+   link.textContent="Offizielle Releases ansehen ↗";link.href=fallback;
+ }
+})();
+</script>
+</body></html>
