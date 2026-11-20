@@ -1,17 +1,21 @@
 "use strict";
 (function(){
   const root = document.documentElement;
-  const themes = new Set(["green","purple","light"]);
-  let theme = "green";
+  const themes = new Set(["system","green","purple","light"]);
+  let theme = "system";
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
   try { const cached = window.localStorage.getItem("seednest-site-theme"); if (themes.has(cached)) theme = cached; } catch {}
   function setTheme(next) {
     if (!themes.has(next)) return;
-    root.dataset.theme = next;
+    theme = next;
+    root.dataset.theme = next === "system" ? (systemDark.matches ? "green" : "light") : next;
+    root.dataset.bsTheme = root.dataset.theme === "light" ? "light" : "dark";
     for (const button of document.querySelectorAll("[data-set-theme]")) {
       button.setAttribute("aria-pressed", String(button.dataset.setTheme === next));
     }
     try { window.localStorage.setItem("seednest-site-theme", next); } catch {}
   }
+  systemDark.addEventListener("change", () => { if (theme === "system") setTheme("system"); });
   document.querySelectorAll("[data-set-theme]").forEach(b => b.addEventListener("click",()=>setTheme(b.dataset.setTheme)));
   setTheme(theme);
   const menu = document.getElementById("menu-toggle");
@@ -52,8 +56,12 @@
       const notes = document.getElementById("release-notes");
       if (notes) notes.textContent = "Aktuelle Veröffentlichung: " + m.tag + " · " + (m.size / 1000000).toFixed(1) + " MB · Prüfsumme verfügbar.";
     } catch {
+      for (const id of ["download-primary","download-bottom"]) {
+        const link = document.getElementById(id);
+        if (link) { link.removeAttribute("href"); link.setAttribute("aria-disabled","true"); link.setAttribute("title","Downloadmetadaten konnten nicht verifiziert werden"); }
+      }
       const notes = document.getElementById("release-notes");
-      if (notes) notes.textContent = "Bei Problemen bitte die offizielle GitHub-Releases-Seite verwenden.";
+      if (notes) notes.textContent = "Downloadmetadaten nicht verifizierbar. Bitte offizielle GitHub-Releases prüfen.";
     }
   })();
 })();
