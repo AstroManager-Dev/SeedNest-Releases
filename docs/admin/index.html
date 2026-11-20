@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de" data-theme="green">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#09100e">
+<title>SeedNest Admin – Geschützte Downloadstatistik</title>
+<link rel="stylesheet" href="../assets/site.css"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<script defer src="../assets/site.js"></script><script defer src="./admin.js"></script>
+<style>
+.admin-hero{padding:70px 0 28px}.admin-hero h1{font-size:clamp(35px,5.1vw,60px);margin-bottom:10px}.admin-hero p{max-width:700px;color:var(--muted);line-height:1.7}.auth-panel{max-width:650px;border:1px solid var(--line);border-radius:22px;background:var(--surface);padding:32px;margin:25px 0 100px}.auth-panel p{color:var(--muted);font-size:13px;line-height:1.75}.auth-state{border:1px solid var(--line);background:var(--surface-2);padding:13px 15px;border-radius:12px;color:var(--muted);font-size:13px;margin:18px 0}.admin-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:32px 0}.admin-metric{border:1px solid var(--line);border-radius:17px;padding:21px;background:var(--surface)}.admin-metric small{display:block;color:var(--muted);font-weight:700;font-size:11px}.admin-metric strong{display:block;color:var(--accent);font-size:37px;letter-spacing:-.055em;margin:14px 0 5px;font-variant-numeric:tabular-nums}.admin-metric span{font-size:11px;color:var(--muted)}.panel{border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:27px;margin:18px 0}.panel h2{margin-bottom:6px;font-size:21px}.panel p{font-size:12px;color:var(--muted)}.bars{display:grid;gap:15px;margin-top:30px}.bar-row{display:grid;grid-template-columns:130px 1fr 60px;align-items:center;gap:15px;font-size:12px}.bar-track{height:13px;border-radius:99px;background:var(--surface-3);overflow:hidden}.bar-fill{height:100%;background:linear-gradient(90deg,#689b65,var(--accent));border-radius:99px}.bar-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.bar-value{text-align:right;font-weight:780}.history-chart{min-height:210px;display:flex;align-items:center;justify-content:center}.history-chart svg{width:100%;max-height:280px}.history-chart text{font-size:11px;fill:var(--muted)}.controls{display:flex;gap:11px;align-items:center;flex-wrap:wrap}.small-button{border:1px solid var(--line);border-radius:10px;background:var(--surface-2);color:var(--text);padding:11px 15px;font-size:12px;font-weight:730}.small-button:hover{border-color:var(--accent)}.hidden{display:none!important}.admin-notice{color:var(--muted);font-size:12px;line-height:1.7;margin:26px 0 70px}#protected{padding-bottom:40px}@media(max-width:820px){.admin-metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.auth-panel{padding:22px}.admin-hero{padding:46px 0 24px}.admin-metrics{gap:9px}.admin-metric{padding:16px}.admin-metric strong{font-size:32px}.bar-row{grid-template-columns:108px 1fr 39px;gap:8px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="header"><div class="wrap header-inner">
+<a class="brand" href="../"><span class="mark" aria-hidden="true">✳</span><span>SeedNest<small>Admin Console</small></span></a>
+<button class="menu-button" id="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="primary-nav">☰</button>
+<nav id="primary-nav" class="nav" aria-label="Hauptnavigation"><a href="../">Öffentliche Website</a><a href="../changelog/">Changelog</a><a href="./" aria-current="page">Admin-Statistik</a></nav>
+<div class="theme-switch" role="group" aria-label="Seitendesign"><button class="swatch" data-set-theme="green" aria-pressed="true" aria-label="Dark Green"></button><button class="swatch" data-set-theme="purple" aria-pressed="false" aria-label="Purple Haze"></button><button class="swatch" data-set-theme="light" aria-pressed="false" aria-label="Clean Light"></button></div>
+</div></header>
+<main class="wrap" id="inhalt">
+<section class="admin-hero"><span class="eyebrow">Nur für berechtigte Administratoren</span><h1>SeedNest <span>Analytics.</span></h1><p>Interne Auswertung der offiziellen APK-Downloads. Die Statistikdaten werden erst nach verifizierter GitHub-Anmeldung und serverseitiger Administratorprüfung aus Supabase geladen.</p></section>
+<section class="auth-panel" id="gate" aria-labelledby="gate-title">
+<h2 id="gate-title">Geschützter Bereich</h2>
+<p>Für diesen Bereich ist eine gültige, vom SeedNest-Backend freigegebene GitHub-Identität erforderlich. Öffentliche Besucher sehen keine internen Verlaufstabellen.</p>
+<div class="auth-state" id="auth-status" role="status" aria-live="polite">Nicht angemeldet.</div>
+<div class="controls"><button type="button" class="button" id="login">Mit GitHub anmelden</button><a class="button secondary" href="../">Zur SeedNest-Website</a></div>
+<p style="margin-top:22px">Hinweis: Der Zugriff wird auf dem Server anhand der bestätigten GitHub-Konto-ID geprüft. Ein GitHub-Benutzername oder eine E-Mail-Adresse reichen nicht aus.</p>
+</section>
+<section id="protected" class="hidden" aria-label="Private Statistiken">
+<div class="controls" style="justify-content:space-between;margin-bottom:18px"><div id="admin-welcome" style="font-weight:820">Admin</div><div class="controls"><button type="button" id="refresh" class="small-button">Aktualisieren</button><button type="button" id="snapshot" class="small-button">Tagesstand sichern</button><button type="button" id="logout" class="small-button">Abmelden</button></div></div>
+<div class="auth-state" id="data-status" role="status" aria-live="polite">Geschützte Statistik wird geladen …</div>
+<div class="admin-metrics">
+<div class="admin-metric"><small>Gesamte APK-Downloads</small><strong id="total">–</strong><span>Alle öffentlichen Releases</span></div>
+<div class="admin-metric"><small>Aktuelle Version</small><strong id="current">–</strong><span id="current-tag">Noch keine Daten</span></div>
+<div class="admin-metric"><small>Veröffentlichte Versionen</small><strong id="releases">–</strong><span>Mit APK-Dateien</span></div>
+<div class="admin-metric"><small>Gesicherte Tage</small><strong id="days">–</strong><span>Private Historie in Supabase</span></div>
+</div>
+<div class="panel"><h2>Downloadverlauf</h2><p>Tagesstände werden in einer privaten Datenbank gespeichert. Derzeit erfolgt die Aktualisierung bei manueller Sicherung durch einen berechtigten Admin.</p><div class="history-chart" id="history-chart"><p>Historie wird geladen …</p></div></div>
+<div class="panel"><h2>Downloads je Version</h2><p>Aktuelle GitHub-Asset-Zähler; keine eindeutigen Geräte oder Benutzer.</p><div class="bars" id="release-bars"></div></div>
+<p class="admin-notice">Die Kennzahlen stammen aus GitHubs öffentlich zugänglichen Release-Asset-Zählern. Die Admin-Oberfläche und künftig erhobenen Verlaufseinträge sind geschützt; öffentlich erfasste historische Kennzahlen lassen sich nicht nachträglich geheim machen. Für eine tägliche Hintergrund-Sicherung wird später eine separate, abgesicherte Automatisierung benötigt.</p>
+</section>
+</main>
+<footer class="footer"><div class="wrap footline"><span>© 2026 SeedNest · Admin-Statistik</span><span><a href="../">Öffentliche Website</a> · Zugriff nur mit serverseitiger Freigabe</span></div></footer>
+</body></html>
