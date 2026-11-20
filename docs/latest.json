@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "de.seednest.app",
+  "versionCode": 49,
+  "versionName": "Alpha.0.5.009",
+  "tag": "Alpha.0.5.009",
+  "notes": "KI-Rechnungsimport mit Händler-Artikelnummern-Abgleich; zusammengeführter Entwicklungsstand und korrigierte Haupt-App-Buildzuordnung. Updatefähig über private Codes 47/48. Die gemeldete Preview-Abweichung ist auf echtem Gerät noch nicht abschließend geklärt. Vorher externes Backup erstellen; nicht deinstallieren.",
+  "apkUrl": "https://github.com/AstroManager-Dev/SeedNest-Releases/releases/download/Alpha.0.5.009/SeedNest-Native-Alpha.0.5.009.apk",
+  "sha256": "7eacec7311c69ac3cf858a1131413478eb1a8e6137aeba8eec2b98f11843b0d2",
+  "size": 104933766
+}
