@@ -23,3 +23,25 @@
   }catch{if(notes)notes.textContent="Release-Informationen derzeit nicht verifizierbar. Bitte die offizielle Downloadseite prüfen.";}
  })();
 })();
+// Rotating gallery: accessible manual controls, automatic pause for reduced motion and interaction.
+(() => {
+ const carousel=document.getElementById("app-gallery"),track=document.getElementById("gallery-track");
+ if(!carousel||!track)return;
+ const slides=[...track.querySelectorAll(".screenshot-card")],count=slides.length;
+ const prev=document.getElementById("gallery-prev"),next=document.getElementById("gallery-next"),pause=document.getElementById("gallery-pause"),current=document.getElementById("gallery-current"),dots=document.getElementById("gallery-dots");
+ if(!count)return;
+ let index=0,paused=false,hover=false,focus=false,visible=true;
+ const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
+ const dotsButtons=slides.map((slide,i)=>{const b=document.createElement("button");b.className="gallery-dot";b.type="button";b.setAttribute("aria-label","Screenshot "+(i+1)+" anzeigen");b.addEventListener("click",()=>go(i));dots.append(b);return b;});
+ function perView(){return window.innerWidth<=390?1:window.innerWidth<=700?2:window.innerWidth<=1050?3:4;}
+ function go(i){index=(i+count)%count;const shown=Math.min(index,Math.max(0,count-perView()));const target=slides[shown];track.style.transform="translateX(-"+target.offsetLeft+"px)";if(current)current.textContent=String(index+1).padStart(2,"0");dotsButtons.forEach((b,n)=>b.setAttribute("aria-current",String(n===index)));}
+ prev?.addEventListener("click",()=>go(index-1));next?.addEventListener("click",()=>go(index+1));
+ pause?.addEventListener("click",()=>{paused=!paused;pause.textContent=paused?"Fortsetzen":"Pause";pause.setAttribute("aria-pressed",String(paused));});
+ carousel.addEventListener("mouseenter",()=>hover=true);carousel.addEventListener("mouseleave",()=>hover=false);
+ carousel.addEventListener("focusin",()=>focus=true);carousel.addEventListener("focusout",e=>{if(!carousel.contains(e.relatedTarget))focus=false;});
+ carousel.addEventListener("keydown",e=>{if(e.key==="ArrowLeft"){e.preventDefault();go(index-1);}if(e.key==="ArrowRight"){e.preventDefault();go(index+1);}});
+ let touchX=null;carousel.addEventListener("touchstart",e=>{touchX=e.changedTouches[0]?.clientX??null;},{passive:true});carousel.addEventListener("touchend",e=>{if(touchX===null)return;const delta=(e.changedTouches[0]?.clientX??touchX)-touchX;if(Math.abs(delta)>45)go(index+(delta<0?1:-1));touchX=null;},{passive:true});
+ if("IntersectionObserver" in window){const observer=new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??false;},{threshold:.2});observer.observe(carousel);}
+ window.addEventListener("resize",()=>go(index));window.addEventListener("load",()=>go(index));go(0);
+ setInterval(()=>{if(!paused&&!hover&&!focus&&visible&&!document.hidden&&!reduced.matches)go(index+1);},4500);
+})();
