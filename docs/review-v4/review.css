@@ -66,3 +66,33 @@ html,body{min-height:100%;overflow-x:clip}
  .hero-copy{max-width:760px;align-self:flex-start}
  .phone-area{width:100%;height:330px}
 }
+
+/* V4.2: layered art direction. New high-resolution assets are staged locally
+   and will become visible once uploaded to ../assets/botanical/v4/.
+   Existing published hero remains as a safe fallback until then. */
+.hero{
+ background-image:
+  linear-gradient(90deg,rgba(2,15,8,.90) 0%,rgba(2,15,8,.76) 32%,rgba(2,15,8,.10) 75%),
+  url("../assets/botanical/v4/hero-botanical.webp"),
+  url("../assets/botanical/botanical-hero.webp");
+ background-position:center,center center,center;
+ background-size:cover,cover,cover;
+ background-repeat:no-repeat;
+}
+.hero:after{
+ content:"";position:absolute;inset:auto 0 0;height:23%;pointer-events:none;
+ background:linear-gradient(0deg,#041209,transparent);z-index:-1;
+}
+.phone-area:before{
+ content:"";position:absolute;inset:-8% -10% 8% 0;pointer-events:none;
+ background:url("../assets/botanical/v4/gallery-halo.webp") center/cover no-repeat;
+ opacity:.48;mix-blend-mode:screen;mask-image:radial-gradient(ellipse at 55% 45%,#000 15%,transparent 76%);
+}
+.features{isolation:isolate}
+.feature{background:linear-gradient(160deg,rgba(16,42,23,.91),rgba(8,28,15,.94));backdrop-filter:blur(9px)}
+@media(min-width:1251px){.hero-grid{min-height:430px}.phone-area:before{inset:-6% -6% 3% 0}}
+@media(max-width:850px){
+ .hero{background-position:center,64% center,center}
+ .hero{background-image:linear-gradient(180deg,rgba(2,15,8,.86),rgba(2,15,8,.57) 50%,rgba(2,15,8,.8)),url("../assets/botanical/v4/hero-botanical.webp"),url("../assets/botanical/botanical-hero.webp")}
+ .phone-area:before{inset:0 -5% 8%;opacity:.35}
+}
