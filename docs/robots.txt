@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /SeedNest-Releases/
+Disallow: /SeedNest-Releases/preview/
+Disallow: /SeedNest-Releases/preview-v3/
+Sitemap: https://astromanager-dev.github.io/SeedNest-Releases/sitemap.xml
