@@ -38,3 +38,13 @@ Quellcode erstellt und GitHub-Commits vorhanden. **Nicht verifiziert:** GitHub-P
 - FAQ in der Review ausgeblendet, GitHub-Symbol durch SVG ersetzt, CSS-Cache auf v2.
 - **Weiter offen:** Referenzbild verlangt hochauflösende fotorealistische Cannabisblätter, Tropfen, Moos und leuchtende Reflexe; vorhandenes 320×180-WebP erfüllt dies nicht. Eine 1:1-Fidelity kann daher nicht behauptet werden. Echte Browser-Screenshots und visuelle QA nach diesem Commit noch ausstehend.
 - Live-Dateien außerhalb `docs/review-v4/` unverändert.
+
+## Fidelity-Durchgang V4.3 – 2026-11-21
+
+- Visuelle Referenz des Nutzers erneut als Maßstab: kompakter Hero mit Text links und fünf Smartphone-Ansichten rechts, sechs flache Funktionskarten, durchgehende Workflow-Leiste, Footer mit Download-CTA.
+- Desktop-Hero-Proportionen, Überschriftenmaß, Galeriehöhe und Feature-Kartenhöhe enger an Referenz angepasst.
+- Footer mit visuell hervorgehobenem Download-CTA ergänzt; Changelog und Impressum bleiben zugänglich.
+- Smartphone-Galerie berechnet Abstände anhand ihrer tatsächlichen Containerbreite, um Überlauf bei schmalen Viewports zu reduzieren.
+- Mobile Funktionskarten und Footer-Layout verdichtet; originalgetreue App-Screenshots und hochgeladene botanische Assets unverändert.
+- Commits: `45897e7`, `a791893`, `bf9a44a`.
+- **QA:** Quellcodeänderungen committed. Browser-Rendering und Pixelvergleich nach diesem Durchgang noch nicht verifiziert. Freigabestatus: Korrektur-/Review-Phase, nicht live.
