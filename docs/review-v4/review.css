@@ -73,7 +73,7 @@ html,body{min-height:100%;overflow-x:clip}
 .hero{
  background-image:
   linear-gradient(90deg,rgba(2,15,8,.90) 0%,rgba(2,15,8,.76) 32%,rgba(2,15,8,.10) 75%),
-  url("../assets/botanical/v4/hero-botanical.webp"),
+  url("../assets/botanical/hero-botanical.webp"),
   url("../assets/botanical/botanical-hero.webp");
  background-position:center,center center,center;
  background-size:cover,cover,cover;
@@ -85,7 +85,7 @@ html,body{min-height:100%;overflow-x:clip}
 }
 .phone-area:before{
  content:"";position:absolute;inset:-8% -10% 8% 0;pointer-events:none;
- background:url("../assets/botanical/v4/gallery-halo.webp") center/cover no-repeat;
+ background:url("../assets/botanical/gallery-halo.webp") center/cover no-repeat;
  opacity:.48;mix-blend-mode:screen;mask-image:radial-gradient(ellipse at 55% 45%,#000 15%,transparent 76%);
 }
 .features{isolation:isolate}
@@ -93,6 +93,6 @@ html,body{min-height:100%;overflow-x:clip}
 @media(min-width:1251px){.hero-grid{min-height:430px}.phone-area:before{inset:-6% -6% 3% 0}}
 @media(max-width:850px){
  .hero{background-position:center,64% center,center}
- .hero{background-image:linear-gradient(180deg,rgba(2,15,8,.86),rgba(2,15,8,.57) 50%,rgba(2,15,8,.8)),url("../assets/botanical/v4/hero-botanical.webp"),url("../assets/botanical/botanical-hero.webp")}
+ .hero{background-image:linear-gradient(180deg,rgba(2,15,8,.86),rgba(2,15,8,.57) 50%,rgba(2,15,8,.8)),url("../assets/botanical/hero-botanical.webp"),url("../assets/botanical/botanical-hero.webp")}
  .phone-area:before{inset:0 -5% 8%;opacity:.35}
 }
