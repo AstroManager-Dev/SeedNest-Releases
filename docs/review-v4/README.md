@@ -48,3 +48,11 @@ Quellcode erstellt und GitHub-Commits vorhanden. **Nicht verifiziert:** GitHub-P
 - Mobile Funktionskarten und Footer-Layout verdichtet; originalgetreue App-Screenshots und hochgeladene botanische Assets unverändert.
 - Commits: `45897e7`, `a791893`, `bf9a44a`.
 - **QA:** Quellcodeänderungen committed. Browser-Rendering und Pixelvergleich nach diesem Durchgang noch nicht verifiziert. Freigabestatus: Korrektur-/Review-Phase, nicht live.
+
+## V4.4 – 2026-11-21
+
+- Sechs generische Unicode-Funktionssymbole durch einheitliche, direkt eingebettete SVG-Icons ersetzt (ohne externe Abhängigkeiten).
+- Workflow-Pfeile und Funktionskarten optisch näher an der Desktop-Referenz gestaltet.
+- Desktop-Hero-Raster und Abstände präzisiert; mobile Icongrößen separat festgelegt.
+- Commits: `cf515b9`, `9fa161e`.
+- Status: Quellcodeänderungen auf `main` committed, visuelle Browserprüfung weiterhin ausstehend. Keine Live-Übernahme.
