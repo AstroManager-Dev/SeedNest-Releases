@@ -23,3 +23,13 @@ Stand: 2026-11-21 · Status: Implementiert im Repository, Live-Deployment und vi
 - Quellcode in GitHub geschrieben; CSS-/JS-Assets referenziert.
 - **Offen:** tatsächliches GitHub-Pages-Deployment, mobile Browser-Sichtprüfung, Animationstest, Lighthouse/Core Web Vitals, Link-/Bildprüfung in der ausgelieferten Seite.
 - Vor einer Freigabe für die öffentliche Homepage: Originalkonzept als Referenz abgleichen, Bildassets optimieren, Alt-Texte gegen tatsächliche Screenshots prüfen und responsiv auf Geräten testen.
+
+## Verbindliche Produktionsreihenfolge und Screenshot-Regel (2026-11-21)
+
+1. Grafische Assets des freigegebenen Botanical-Cinema-Konzepts reproduzieren bzw. nach Vorlage umsetzen; ohne zugängliches Original-Konzeptbild keine Behauptung pixelgenauer Übereinstimmung.
+2. Echte SeedNest-Screenshots in sämtlichen Smartphone-Mockups einsetzen. Keine synthetischen App-Dashboards. Originalbilder unverändert lassen.
+3. Responsive Layout und Animationen integrieren.
+4. Sichtprüfung auf Smartphone/Desktop, Bild-/Linkprüfung, Performance- und Accessibility-Prüfung.
+5. Erst nach Freigabe eine öffentliche Übernahme erwägen.
+
+**Bereits korrigiert:** Hero-Phones verwenden `../preview/screenshots/1000139887.jpg` und `1000139888.jpg` statt nachgebauter UI. Die originale Grafikvorlage für die botanischen Elemente fehlt noch; daher ist die Grafikreproduktion weiterhin offen.
