@@ -67,9 +67,8 @@ html,body{min-height:100%;overflow-x:clip}
  .phone-area{width:100%;height:330px}
 }
 
-/* V4.2: layered art direction. New high-resolution assets are staged locally
-   and will become visible once uploaded to ../assets/botanical/v4/.
-   Existing published hero remains as a safe fallback until then. */
+/* V4.2: layered art direction. High-resolution botanical assets are stored in docs/assets/botanical/.
+   The original background remains as a secondary fallback. */
 .hero{
  background-image:
   linear-gradient(90deg,rgba(2,15,8,.90) 0%,rgba(2,15,8,.76) 32%,rgba(2,15,8,.10) 75%),
@@ -96,3 +95,6 @@ html,body{min-height:100%;overflow-x:clip}
  .hero{background-image:linear-gradient(180deg,rgba(2,15,8,.86),rgba(2,15,8,.57) 50%,rgba(2,15,8,.8)),url("../assets/botanical/hero-botanical.webp"),url("../assets/botanical/botanical-hero.webp")}
  .phone-area:before{inset:0 -5% 8%;opacity:.35}
 }
+
+/* Third approved art asset: restrained atmospheric depth behind the workflow. */
+.workflow{background-image:linear-gradient(90deg,rgba(4,24,11,.83),rgba(7,30,13,.67)),url("../assets/botanical/moss-atmosphere.webp");background-size:cover;background-position:center 62%}
