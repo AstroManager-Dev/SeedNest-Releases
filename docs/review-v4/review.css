@@ -98,3 +98,61 @@ html,body{min-height:100%;overflow-x:clip}
 
 /* Third approved art asset: restrained atmospheric depth behind the workflow. */
 .workflow{background-image:linear-gradient(90deg,rgba(4,24,11,.83),rgba(7,30,13,.67)),url("../assets/botanical/moss-atmosphere.webp");background-size:cover;background-position:center 62%}
+
+/* V4.3 fidelity: reference geometry at desktop width and purposeful mobile composition. */
+@media(min-width:1251px){
+ .hero-grid{grid-template-columns:minmax(0,40%) minmax(0,60%);min-height:440px}
+ .hero-copy{align-self:center}
+ .hero-copy h1{font-size:clamp(38px,3.45vw,56px);line-height:1.06}
+ .hero-copy .lead{max-width:465px;font-size:clamp(15px,1.2vw,18px)}
+ .phone-area{height:395px}
+ .phone-deck{height:344px}
+ .phone{width:152px;height:338px}
+ .features{padding:0 clamp(24px,3.4vw,55px) 15px;gap:14px}
+ .feature{min-height:151px;border-radius:23px}
+ .feature-icon{font-size:37px}
+ .workflow{min-height:65px;margin-bottom:18px;padding:10px 26px}
+ .footer{padding:10px clamp(24px,4vw,70px);min-height:80px}
+}
+.footer-download{display:flex;align-items:center;gap:12px;border:1px solid var(--lime);border-radius:40px;padding:9px 18px;color:var(--lime);background:linear-gradient(90deg,#0a2413,#081a0e);min-width:225px;transition:background .2s ease,box-shadow .2s ease}
+.footer-download:hover{background:#17391b;box-shadow:0 0 18px #baff4d30}
+.footer-download .download-mark{font-size:30px;line-height:1}
+.footer-download small{display:block;color:#d3e7ce;font-size:11px}
+.footer-download strong{display:block;font-size:13px;color:var(--text)}
+.footer-download .download-arrow{font-size:28px;margin-left:auto}
+.footer .copyright{font-size:10px}
+@media(min-width:851px){
+ .footer{display:grid;grid-template-columns:auto 1fr auto auto;column-gap:22px}
+ .footer-info{justify-content:center}
+ .footer-download{grid-column:4;grid-row:1}
+ .footer .copyright{grid-column:3;grid-row:1}
+ .footer-links{grid-column:2;grid-row:1;justify-content:flex-end}
+ .footer-info{display:none}
+}
+@media(max-width:850px){
+ .hero{background-position:center,center,center}
+ .hero-grid{gap:4px}
+ .phone-area{height:330px}
+ .phone-deck{height:278px}
+ .gallery-caption{margin-top:5px}
+ .features{padding-top:8px}
+ .feature{min-height:130px}
+ .footer{justify-content:space-between;text-align:left}
+ .footer-download{min-width:190px;padding:8px 13px}
+ .footer-links{gap:14px}
+}
+@media(max-width:480px){
+ .phone-area{height:295px}
+ .phone-deck{height:245px}
+ .phone{width:108px;height:240px}
+ .hero-copy .lead{line-height:1.48}
+ .feature{min-height:120px;border-radius:18px}
+ .feature-icon{font-size:28px}
+ .feature h2{margin:7px 0 5px}
+ .workflow{padding:15px}
+ .footer{display:grid;grid-template-columns:1fr auto;gap:12px;padding:15px 18px}
+ .footer-brand{grid-column:1}
+ .footer-links{grid-column:2}
+ .footer-download{grid-column:1 / -1;justify-self:stretch;justify-content:center}
+ .footer .copyright{grid-column:1 / -1;text-align:center}
+}
