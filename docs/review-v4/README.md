@@ -30,3 +30,11 @@ Quellcode erstellt und GitHub-Commits vorhanden. **Nicht verifiziert:** GitHub-P
 1. Review-URL im Browser auf Desktop und Smartphone öffnen und mit der hochgeladenen Bildreferenz vergleichen.
 2. Rendering- und Interaktionsprobleme beheben; hochwertige Hintergrundgrafik und Icon-Fidelity verbessern.
 3. Erst nach ausdrücklicher Freigabe auf Live übertragen.
+
+## Korrekturdurchgang 2026-11-21 (V4.1)
+
+- Referenzbild und echte Nutzer-Browser-Screenshots verglichen: Überlagerung der Hero-Texte durch Smartphone-Galerie, mobile Überbreite, schwache Bildkulisse, nicht referenzkonforme FAQ und GitHub-Ersatzzeichen festgestellt.
+- Responsive Hero-Raster überarbeitet, Hero-Text höher priorisiert, mittlere Breiten auf gestapelte Darstellung umgestellt, mobile Abstände und Telefonmaße angepasst.
+- FAQ in der Review ausgeblendet, GitHub-Symbol durch SVG ersetzt, CSS-Cache auf v2.
+- **Weiter offen:** Referenzbild verlangt hochauflösende fotorealistische Cannabisblätter, Tropfen, Moos und leuchtende Reflexe; vorhandenes 320×180-WebP erfüllt dies nicht. Eine 1:1-Fidelity kann daher nicht behauptet werden. Echte Browser-Screenshots und visuelle QA nach diesem Commit noch ausstehend.
+- Live-Dateien außerhalb `docs/review-v4/` unverändert.
