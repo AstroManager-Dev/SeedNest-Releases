@@ -3,3 +3,66 @@
 @media(max-width:850px){.site-header{height:65px;padding:0 18px}.brand-symbol{width:40px;height:40px;font-size:30px;border-radius:10px}.brand-copy strong{font-size:24px}.brand-copy small{font-size:7px}.nav{display:none}.mobile-menu{top:65px}.hero-grid{display:block;padding:38px 20px 16px}.hero-copy{max-width:650px}.eyebrow{font-size:10px;letter-spacing:.22em}h1{font-size:clamp(37px,8vw,58px);white-space:normal}.lead{font-size:15px}.phone-area{height:350px;margin-top:25px}.phone-deck{height:310px}.features{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px 20px}.feature{min-height:155px}.workflow{border-radius:25px;display:block;margin:20px;padding:20px}.workflow ol{margin-top:14px;flex-wrap:wrap;justify-content:flex-start}.workflow li{white-space:normal}.footer{justify-content:center;text-align:center}.footer-info{display:none}}
 @media(max-width:480px){.header-actions{gap:6px}.icon-link{display:none}.theme-switch{padding:6px 10px}.hero-grid{padding-top:26px}.actions{gap:9px}.btn{font-size:12px;padding:13px 17px}.benefits{gap:9px;font-size:10px}.phone-area{height:315px}.phone-deck{height:265px}.phone{width:116px;height:258px;border-width:4px;border-radius:20px}.glow{top:4%;height:70%}.gallery-controls{gap:16px}.gallery-controls>button{width:35px;height:35px}.dots{gap:5px}.dots button{width:7px;height:7px}.feature-icon{font-size:29px}.feature h2{font-size:14px}.feature p{font-size:11px}.workflow-label{font-size:17px}.workflow ol{display:grid;gap:10px}.faq{padding-top:20px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+/* V4.1 fidelity pass: reference is a compact 1536×864 desktop composition. */
+html,body{min-height:100%;overflow-x:clip}
+.faq[hidden]{display:none!important}
+.hero{overflow:hidden}
+.hero-grid{grid-template-columns:minmax(0,39%) minmax(0,61%);min-height:430px;gap:0;position:relative}
+.hero-copy{z-index:12;max-width:580px}
+.phone-area{isolation:isolate;z-index:2}
+.phone-deck{overflow:visible}
+.phone{transform-origin:center center}
+.features{max-width:1600px}
+.workflow{max-width:calc(1600px - 110px)}
+.footer{min-height:72px}
+@media(min-width:1251px){
+ .site-header{height:78px}
+ .hero-grid{min-height:435px;padding-top:22px;padding-bottom:4px}
+ .hero-copy{align-self:center}
+ .phone-area{height:392px}
+ .phone-deck{height:347px}
+ .phone{width:148px;height:330px}
+ .features{grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;padding-bottom:18px}
+ .feature{min-height:150px;padding:13px 10px}
+ .workflow{margin-top:0;margin-bottom:20px}
+ .footer{padding-top:12px;padding-bottom:12px}
+}
+@media(min-width:851px) and (max-width:1250px){
+ .hero-grid{grid-template-columns:minmax(0,44%) minmax(0,56%);padding-left:32px;padding-right:32px}
+ .hero-copy{max-width:100%}
+ .phone-area{height:340px}
+ .phone{width:120px;height:267px}
+ .phone-deck{height:283px}
+ .features{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:850px){
+ .hero-grid{display:flex;flex-direction:column;gap:20px;padding:28px 20px 10px}
+ .hero-copy{width:100%;max-width:680px;z-index:3}
+ .hero-copy h1{white-space:normal;overflow-wrap:normal}
+ .phone-area{width:100%;height:340px;margin:0;z-index:1}
+ .phone-deck{height:288px}
+ .phone{top:4px;width:120px;height:267px}
+ .glow{left:18%;right:18%;height:75%}
+ .gallery-controls{margin-top:0}
+ .features{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .feature{min-height:142px;padding:16px 10px}
+ .workflow{margin:16px 20px 22px}
+}
+@media(max-width:480px){
+ .site-header{height:62px}
+ .hero-grid{padding:28px 18px 8px}
+ .hero-copy h1{font-size:clamp(34px,9vw,44px);margin:13px 0}
+ .hero-copy .lead{max-width:100%;font-size:14px}
+ .phone-area{height:300px}
+ .phone-deck{height:248px}
+ .phone{width:110px;height:245px}
+ .features{gap:10px;padding:10px 16px}
+ .feature{min-height:132px}
+ .workflow{margin:14px 16px 18px}
+ .footer{gap:12px}
+}
+@media(min-width:851px) and (max-width:1100px){
+ .hero-grid{display:flex;flex-direction:column;gap:10px}
+ .hero-copy{max-width:760px;align-self:flex-start}
+ .phone-area{width:100%;height:330px}
+}
