@@ -52,3 +52,19 @@ html[data-mode=light] .hero{color:#f2faed}html[data-mode=light] .hero .hero-copy
 .workflow.section{padding-bottom:38px}
 .download.section{padding-top:12px}
 }
+
+/* V3.3: visibly tighter workflow/download composition at desktop widths. */
+@media(min-width:721px){
+.workflow.section{padding-top:38px;padding-bottom:0}
+.workflow .section-title{margin-bottom:20px}
+.workflow-grid{gap:12px}
+.workflow-grid article{padding:17px 20px}
+.workflow-grid h3{margin:7px 0 5px}
+.download.section{padding-top:12px;padding-bottom:38px}
+.download-box{padding:46px 56px}
+}
+@media(max-width:720px){
+.workflow.section{padding-top:42px;padding-bottom:0}
+.workflow .section-title{margin-bottom:18px}
+.download.section{padding-top:14px;padding-bottom:42px}
+}
