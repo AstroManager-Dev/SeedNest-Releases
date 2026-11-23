@@ -16,3 +16,16 @@ GitHub-Codeumstellung durchgeführt. Die GitHub-Pages-Auslieferung, Darstellung 
 ## Freigabegrenze
 
 Nur Website und Assets; keine Android-APK, keine Änderung an Signaturen, Paket-ID oder App-Daten.
+
+## Botanical Cinema V4.5 · 2026-11-23
+
+Die GitHub-Pages-Startseite übernimmt die freigegebene Sites-Version 7
+(Quellcommit `5bd75e82d54994306c6174bb6544feec566bdd93`, WO-20261121-201).
+Sie zeigt die botanische Kulisse, elf App-Ansichten und auf schmalen Displays
+eine gestapelte Ablaufleiste. Der helle Modus nutzt durchgängig Salbeigrün.
+
+Die Startseite lädt `botanical-v4.css` und `botanical-v4.js`. Die öffentliche
+Pages-Fassung übernimmt Canonical, Sitemap-Verweis und Social-Metadaten der
+bisherigen Startseite. Changelog, Installationshinweise, Downloadseite und
+Impressum bleiben unter den bestehenden URLs erreichbar. Die beiden direkten
+APK-Links auf der Startseite zeigen auf die bereits veröffentlichte Alpha.0.5.009.
