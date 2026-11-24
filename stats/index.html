@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" data-theme="green">
+<html lang="de" data-theme="green" data-bs-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -10,6 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://astromanager-dev.github.io/SeedNest-Releases/">
   <title>SeedNest – Deine Sammlung. Alles im Blick. | Android-App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/site.css">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <script src="./assets/site.js?v=49" defer></script>
@@ -25,12 +26,14 @@
       <button class="menu-button" id="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="primary-nav">☰</button>
       <nav class="nav" id="primary-nav" aria-label="Hauptnavigation">
         <a href="#funktionen">Funktionen</a>
+        <a href="#screenshots">Screenshots</a>
         <a href="#ablauf">So funktioniert’s</a>
         <a href="./changelog/">Changelog</a>
         <a href="#fragen">FAQ</a>
         <a class="mini-download" href="./download/?manual=1">Download ↗</a>
       </nav>
       <div class="theme-switch" role="group" aria-label="Seitendesign">
+        <button type="button" class="swatch swatch-system" data-set-theme="system" title="Systemmodus" aria-label="Systemmodus automatisch" aria-pressed="true">◐</button>
         <button type="button" class="swatch" data-set-theme="green" title="Dark Green" aria-label="Dark Green aktivieren" aria-pressed="true"></button>
         <button type="button" class="swatch" data-set-theme="purple" title="Purple Haze" aria-label="Purple Haze aktivieren" aria-pressed="false"></button>
         <button type="button" class="swatch" data-set-theme="light" title="Clean Light" aria-label="Clean Light aktivieren" aria-pressed="false"></button>
@@ -100,6 +103,14 @@
         </div>
       </section>
 
+      <section class="section" id="screenshots" aria-labelledby="screenshots-title">
+        <div class="section-top"><div><div class="kicker">Einblicke in die App</div><h2 id="screenshots-title">SeedNest in Bildern.</h2></div><p>Hier erscheinen ausschließlich echte, freigegebene Aufnahmen der Android-App. Illustrationen werden nicht als Screenshots ausgegeben.</p></div>
+        <div class="row g-3">
+          <div class="col-12 col-md-4"><div class="screenshot-placeholder h-100"><span aria-hidden="true">▤</span><h3>Dashboard</h3><p>Verifizierter Screenshot folgt</p></div></div>
+          <div class="col-12 col-md-4"><div class="screenshot-placeholder h-100"><span aria-hidden="true">▦</span><h3>Sorten &amp; Bestände</h3><p>Verifizierter Screenshot folgt</p></div></div>
+          <div class="col-12 col-md-4"><div class="screenshot-placeholder h-100"><span aria-hidden="true">▣</span><h3>Lager &amp; Etiketten</h3><p>Verifizierter Screenshot folgt</p></div></div>
+        </div>
+      </section>
       <section class="section" id="ablauf" aria-labelledby="workflow-title">
         <div class="kicker">Einfach starten</div><h2 id="workflow-title">In drei Schritten organisiert.</h2>
         <p class="section-lead">Keine komplizierte Einrichtung. Die bestehende Alpha speichert deine private Sammlung lokal auf deinem Gerät.</p>
